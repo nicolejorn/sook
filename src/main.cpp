@@ -21,8 +21,6 @@
 #include "bn_sprite_affine_second_attributes_hbe_ptr.h"
 #include "bn_sprite_regular_second_attributes_hbe_ptr.h"
 #include "bn_sprite_ptr.h"
-/* #include "bn_bg_palettes.h"
-#include "bn_sprite_text_generator.h"*/
 
 #include "bn_sprite_items_truman.h"
 #include "bn_sprite_items_sook.h"
@@ -42,6 +40,7 @@ namespace
     void title_text_scene() //from the example "text"
     {
         bn::sprite_text_generator text_generator(common::variable_8x16_sprite_font);
+        bn::sprite_palette_item original_palette_item = text_generator.palette_item();
         text_generator.set_center_alignment();
 
         bn::vector<bn::sprite_ptr, 32> text_sprites;
@@ -56,8 +55,22 @@ namespace
 
     void introduction_scene()
     {
-        bn::sprite_ptr sook = bn::sprite_items::sook.create_sprite(-32, 32);
-        bn::sprite_ptr truman = bn::sprite_items::truman.create_sprite(-32, -32);
+        //the text part works fine, but creating the sprites gives me an error
+        bn::sprite_text_generator text_generator(common::variable_8x16_sprite_font);
+        bn::sprite_palette_item original_palette_item = text_generator.palette_item();
+        text_generator.set_center_alignment();
+
+        bn::vector<bn::sprite_ptr, 32> text_sprites;
+        text_generator.generate(0, text_y_limit, "My, it's fruitcake weather!", text_sprites);
+
+        //const bn::sprite_palette_item& palette_item = bn::sprite_items::sook.palette_item();
+        //bn::sprite_ptr sook = bn::sprite_items::sook.create_sprite(-32, 32);
+        //bn::sprite_ptr truman = bn::sprite_items::truman.create_sprite(-32, -32);
+
+        while (!bn::keypad::start_pressed())
+        {
+            bn::core::update();
+        }
     }
 }
 
