@@ -1,0 +1,1 @@
+fixed_32x64_font_bn_gfx.o: fixed_32x64_font_bn_gfx.s
