@@ -31,6 +31,7 @@
 #include "common_variable_8x16_sprite_font.h"
 
 #include "fixed_32x64_sprite_font.h"
+#include "player.h"
 
 namespace
 {
@@ -65,7 +66,9 @@ namespace
 
         //const bn::sprite_palette_item& palette_item = bn::sprite_items::sook.palette_item();
         //bn::sprite_ptr sook = bn::sprite_items::sook.create_sprite(-32, 32);
-        bn::sprite_ptr truman = bn::sprite_items::truman.create_sprite(-32, -32);
+        //bn::sprite_ptr truman = bn::sprite_items::truman.create_sprite(-32, -32);
+
+        create_player();
 
         while (!bn::keypad::start_pressed())
         {
@@ -73,7 +76,7 @@ namespace
         }
     }
 
-    void help_find_hat()
+    void help_find_hat(bn::sprite_text_generator& text_generator)
     {
         bn::sprite_palette_item original_palette_item = text_generator.palette_item();
         text_generator.set_center_alignment();
@@ -81,9 +84,16 @@ namespace
         bn::vector<bn::sprite_ptr, 32> text_sprites;
         text_generator.generate(0, text_y_limit, "Fetch our buggy. Help me find my hat. We've thirty cakes to bake.", text_sprites);
 
-        bn::sprite_ptr truman = bn::sprite_items::truman.create_sprite(-32, -32);
+        control_player();
+        //bn::sprite_ptr truman = bn::sprite_items::truman.create_sprite(-32, -32);
         //have "find your friend's hat" written w/ smaller font in top left corner
-        //control_player();
+
+        //create_player();
+
+        /*while (!bn::keypad::start_pressed())
+        {
+            bn::core::update();
+        }*/
     }
 }
 
@@ -103,7 +113,7 @@ int main()
         introduction_scene(text_generator); //we need to add more to this to actually see it
         bn::core::update();
 
-        help_find_hat();
-        bn:core:update();
+        help_find_hat(text_generator);
+        bn::core::update();
     }
 }

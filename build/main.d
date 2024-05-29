@@ -98,7 +98,8 @@ main.o: C:/Users/sadie/programming/butano-17.5.0/games/sook/src/main.cpp \
  C:/Users/sadie/programming/butano-17.5.0/common/include/common_variable_8x16_sprite_font.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_common_variable_8x16_font.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/fixed_32x64_sprite_font.h \
- C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_fixed_32x64_font.h
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_fixed_32x64_font.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/player.h
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_core.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_span.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_array.h:
@@ -199,3 +200,4 @@ C:/Users/sadie/programming/butano-17.5.0/common/include/common_variable_8x16_spr
 C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_common_variable_8x16_font.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/fixed_32x64_sprite_font.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_fixed_32x64_font.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/player.h:
