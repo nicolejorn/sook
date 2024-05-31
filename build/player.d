@@ -28,7 +28,7 @@ player.o: \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_string_view.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vblank_callback_type.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_keypad.h \
- C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_truman.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_truman2.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_item.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_point.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_point.h \
@@ -73,7 +73,7 @@ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_memory_alias.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_string_view.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vblank_callback_type.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_keypad.h:
-C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_truman.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_truman2.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_item.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_point.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_point.h:

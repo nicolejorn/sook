@@ -1,2 +1,2 @@
-void create_player();
-void control_player();
+void create_player(int x, int y);
+void control_player(int firstX, int firstY);

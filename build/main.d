@@ -84,7 +84,7 @@ main.o: C:/Users/sadie/programming/butano-17.5.0/games/sook/src/main.cpp \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_affine_second_attributes_hbe_ptr.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_regular_second_attributes_hbe_ptr.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_ptr.h \
- C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_truman.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_truman2.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_item.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_sook.h \
  C:/Users/sadie/programming/butano-17.5.0/common/include/common_fixed_8x8_sprite_font.h \
@@ -99,7 +99,8 @@ main.o: C:/Users/sadie/programming/butano-17.5.0/games/sook/src/main.cpp \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_common_variable_8x16_font.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/fixed_32x64_sprite_font.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_fixed_32x64_font.h \
- C:/Users/sadie/programming/butano-17.5.0/games/sook/include/player.h
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/player.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/npc.h
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_core.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_span.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_array.h:
@@ -185,7 +186,7 @@ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_regular_second
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_affine_second_attributes_hbe_ptr.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_regular_second_attributes_hbe_ptr.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_ptr.h:
-C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_truman.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_truman2.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_item.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_sook.h:
 C:/Users/sadie/programming/butano-17.5.0/common/include/common_fixed_8x8_sprite_font.h:
@@ -201,3 +202,4 @@ C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_common
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/fixed_32x64_sprite_font.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_fixed_32x64_font.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/player.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/npc.h:

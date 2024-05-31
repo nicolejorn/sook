@@ -22,7 +22,7 @@
 #include "bn_sprite_regular_second_attributes_hbe_ptr.h"
 #include "bn_sprite_ptr.h"
 
-#include "bn_sprite_items_truman.h"
+#include "bn_sprite_items_truman2.h"
 #include "bn_sprite_items_sook.h"
 
 #include "common_fixed_8x8_sprite_font.h"
@@ -32,6 +32,7 @@
 
 #include "fixed_32x64_sprite_font.h"
 #include "player.h"
+#include "npc.h"
 
 namespace
 {
@@ -54,7 +55,7 @@ namespace
         }
     }
 
-    void introduction_scene(bn::sprite_text_generator& text_generator)
+    void dialogue_scene(bn::sprite_text_generator& text_generator, bn::string_view& dialogue)
     {
         //the text part works fine, but creating the sprites gives me an error
         //bn::sprite_text_generator text_generator(common::variable_8x16_sprite_font);
@@ -62,13 +63,13 @@ namespace
         text_generator.set_center_alignment();
 
         bn::vector<bn::sprite_ptr, 32> text_sprites;
-        text_generator.generate(0, text_y_limit, "Oh my, it's fruitcake weather!", text_sprites);
+        text_generator.generate(0, text_y_limit, dialogue, text_sprites);
 
         //const bn::sprite_palette_item& palette_item = bn::sprite_items::sook.palette_item();
         //bn::sprite_ptr sook = bn::sprite_items::sook.create_sprite(-32, 32);
         //bn::sprite_ptr truman = bn::sprite_items::truman.create_sprite(-32, -32);
 
-        create_player();
+        create_player(32,32);
 
         while (!bn::keypad::start_pressed())
         {
@@ -82,18 +83,26 @@ namespace
         text_generator.set_center_alignment();
 
         bn::vector<bn::sprite_ptr, 32> text_sprites;
-        text_generator.generate(0, text_y_limit, "Fetch our buggy. Help me find my hat. We've thirty cakes to bake.", text_sprites);
+        text_generator.generate(0, text_y_limit, "We've thirty cakes to bake.", text_sprites);
 
-        control_player();
-        //bn::sprite_ptr truman = bn::sprite_items::truman.create_sprite(-32, -32);
+        //how to have a boolean parameter for different conditions?
+        //like for finding the hat, have the player control him until they reach a certain x and y where the hat is
+        bool hatFound = false;
+        control_player(32, 32); 
+
         //have "find your friend's hat" written w/ smaller font in top left corner
-
-        //create_player();
 
         /*while (!bn::keypad::start_pressed())
         {
             bn::core::update();
         }*/
+    }
+
+    void pick_pecans() { //bn::sprite_text_generator& text_generator
+        bn::bg_palettes::set_transparent_color(bn::color(1, 16, 1));
+        control_player(16, 16); 
+        create_npc(1); //how to use parameter w/o string? Array? Enum? Switch within function?
+        create_npc(2);
     }
 }
 
@@ -104,16 +113,28 @@ int main()
     bn::sprite_text_generator text_generator(common::variable_8x16_sprite_font);
     bn::bg_palettes::set_transparent_color(bn::color(16, 16, 16));
 
+    bn::string_view dialogue_text_lines[] = {
+       "Oh my, it's fruitcake weather!",
+       "Fetch our buggy. Help me find my hat.",
+    };
+
     while(true)
     {
         //this is where the title screen graphic will go (or it will go inside title_text_scene)
         title_text_scene(text_generator);
         bn::core::update();
 
-        introduction_scene(text_generator); //we need to add more to this to actually see it
+        dialogue_scene(text_generator, dialogue_text_lines[0]); //we need to add more to this to actually see it
+        bn::core::update();
+
+        dialogue_scene(text_generator, dialogue_text_lines[1]); //we need to add more to this to actually see it
         bn::core::update();
 
         help_find_hat(text_generator);
         bn::core::update();
+
+        pick_pecans();
+        //he has to pick pecans
+        //have Sook and Queenie follow him EarthBound-style
     }
 }
