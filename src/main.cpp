@@ -34,6 +34,8 @@
 #include "player.h"
 #include "npc.h"
 
+//https://soundbible.com/1987-Rockslide-Small.html
+
 namespace
 {
     constexpr bn::fixed text_y_inc = 14;
@@ -98,11 +100,12 @@ namespace
         }*/
     }
 
-    void pick_pecans() { //bn::sprite_text_generator& text_generator
+    void pick_pecans() { 
+        //bn::sprite_text_generator& text_generator
         bn::bg_palettes::set_transparent_color(bn::color(1, 16, 1));
         control_player(16, 16); 
-        create_npc(1); //how to use parameter w/o string? Array? Enum? Switch within function?
-        create_npc(2);
+        create_npc(1, 24, 24); //how to use parameter w/o string? Array? Enum? Switch within function?
+        create_npc(2, 32, 32);
     }
 }
 
@@ -117,6 +120,8 @@ int main()
        "Oh my, it's fruitcake weather!",
        "Fetch our buggy. Help me find my hat.",
     };
+
+    //bn::string_view goal_text_lines[] for finding hat and picking pecans
 
     while(true)
     {
@@ -134,7 +139,10 @@ int main()
         bn::core::update();
 
         pick_pecans();
+        bn::core::update();
         //he has to pick pecans
         //have Sook and Queenie follow him EarthBound-style
+
+        //for the "caarackle" this could be a good place to use sound effects
     }
 }

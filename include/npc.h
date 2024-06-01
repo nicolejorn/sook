@@ -1,1 +1,1 @@
-void create_npc(int name);
+void create_npc(int name, int firstX, int firstY);
