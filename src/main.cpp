@@ -91,7 +91,7 @@ namespace
 
         //how to have a boolean parameter for different conditions?
         //like for finding the hat, have the player control him until they reach a certain x and y where the hat is
-        bool hatFound = false;
+        //bool hatFound = false;
         Player player(bn::sprite_items::truman2.create_sprite(32, 32));
         player.move_player(32, 32); 
 
@@ -105,17 +105,16 @@ namespace
 
     void pick_pecans() { 
         //bn::sprite_text_generator& text_generator
-        bn::bg_palettes::set_transparent_color(bn::color(1, 16, 1));
-        Player player(bn::sprite_items::truman2.create_sprite(32, 32));
-        player.move_player(16, 16); 
-        //control_player(16, 16); 
-        Npc sook(bn::sprite_items::sook.create_sprite(32, 32));
-        sook.move_npc(48, 48); 
-        //create_npc(1, 24, 24); //how to use parameter w/o string? Array? Enum? Switch within function?
 
-        //Npc queenie(bn::sprite_items::truman2.create_sprite(32, 32));
-        //queenie.move_npc(16, 16); 
-        //create_npc(2, 32, 32);
+        //Need some way of being able to move all 3 at same time
+        //Change while's placement? Have player create two NPCs when created?
+        bn::bg_palettes::set_transparent_color(bn::color(1, 16, 1));
+        Player player(bn::sprite_items::truman2.create_sprite(-16, -48));
+        Npc sook(bn::sprite_items::sook.create_sprite(-48, -48));
+        Npc queenie(bn::sprite_items::queenie.create_sprite(-80, -48));
+        player.move_player(-16, -48);  
+        sook.move_npc(-48, -48); 
+        queenie.move_npc(-80, -48); 
     }
 }
 
