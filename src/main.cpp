@@ -24,6 +24,7 @@
 
 #include "bn_sprite_items_truman2.h"
 #include "bn_sprite_items_sook.h"
+#include "bn_sprite_items_queenie.h"
 
 #include "common_fixed_8x8_sprite_font.h"
 #include "common_fixed_8x16_sprite_font.h"
@@ -71,7 +72,8 @@ namespace
         //bn::sprite_ptr sook = bn::sprite_items::sook.create_sprite(-32, 32);
         //bn::sprite_ptr truman = bn::sprite_items::truman.create_sprite(-32, -32);
 
-        create_player(32,32);
+        Player player(bn::sprite_items::truman2.create_sprite(32, 32));
+        //create_player(32,32);
 
         while (!bn::keypad::start_pressed())
         {
@@ -90,7 +92,8 @@ namespace
         //how to have a boolean parameter for different conditions?
         //like for finding the hat, have the player control him until they reach a certain x and y where the hat is
         bool hatFound = false;
-        control_player(32, 32); 
+        Player player(bn::sprite_items::truman2.create_sprite(32, 32));
+        player.move_player(32, 32); 
 
         //have "find your friend's hat" written w/ smaller font in top left corner
 
@@ -103,9 +106,16 @@ namespace
     void pick_pecans() { 
         //bn::sprite_text_generator& text_generator
         bn::bg_palettes::set_transparent_color(bn::color(1, 16, 1));
-        control_player(16, 16); 
-        create_npc(1, 24, 24); //how to use parameter w/o string? Array? Enum? Switch within function?
-        create_npc(2, 32, 32);
+        Player player(bn::sprite_items::truman2.create_sprite(32, 32));
+        player.move_player(16, 16); 
+        //control_player(16, 16); 
+        Npc sook(bn::sprite_items::sook.create_sprite(32, 32));
+        sook.move_npc(48, 48); 
+        //create_npc(1, 24, 24); //how to use parameter w/o string? Array? Enum? Switch within function?
+
+        //Npc queenie(bn::sprite_items::truman2.create_sprite(32, 32));
+        //queenie.move_npc(16, 16); 
+        //create_npc(2, 32, 32);
     }
 }
 
@@ -129,10 +139,10 @@ int main()
         title_text_scene(text_generator);
         bn::core::update();
 
-        dialogue_scene(text_generator, dialogue_text_lines[0]); //we need to add more to this to actually see it
+        dialogue_scene(text_generator, dialogue_text_lines[0]); 
         bn::core::update();
 
-        dialogue_scene(text_generator, dialogue_text_lines[1]); //we need to add more to this to actually see it
+        dialogue_scene(text_generator, dialogue_text_lines[1]); 
         bn::core::update();
 
         help_find_hat(text_generator);
@@ -140,6 +150,7 @@ int main()
 
         pick_pecans();
         bn::core::update();
+
         //he has to pick pecans
         //have Sook and Queenie follow him EarthBound-style
 

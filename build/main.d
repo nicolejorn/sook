@@ -87,6 +87,7 @@ main.o: C:/Users/sadie/programming/butano-17.5.0/games/sook/src/main.cpp \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_truman2.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_item.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_sook.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_queenie.h \
  C:/Users/sadie/programming/butano-17.5.0/common/include/common_fixed_8x8_sprite_font.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_font.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_utf8_characters_map.h \
@@ -189,6 +190,7 @@ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_ptr.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_truman2.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_item.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_sook.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_queenie.h:
 C:/Users/sadie/programming/butano-17.5.0/common/include/common_fixed_8x8_sprite_font.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_font.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_utf8_characters_map.h:

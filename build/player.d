@@ -28,23 +28,23 @@ player.o: \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_string_view.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vblank_callback_type.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_keypad.h \
- C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_truman2.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_item.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_ptr.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_point.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_point.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_point_fwd.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell_info.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_ptr.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/player.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_truman2.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_item.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_shape_size.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_bpp_mode.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_tiles_item.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_tile.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_compression_type.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_palette_item.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_color.h \
- C:/Users/sadie/programming/butano-17.5.0/games/sook/include/player.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_ptr.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell_info.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_ptr.h
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_color.h
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_core.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_span.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_array.h:
@@ -73,11 +73,16 @@ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_memory_alias.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_string_view.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vblank_callback_type.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_keypad.h:
-C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_truman2.h:
-C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_item.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_ptr.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_point.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_point.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_point_fwd.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell_info.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_ptr.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/player.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_truman2.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_item.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_shape_size.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_bpp_mode.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_tiles_item.h:
@@ -85,8 +90,3 @@ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_tile.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_compression_type.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_palette_item.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_color.h:
-C:/Users/sadie/programming/butano-17.5.0/games/sook/include/player.h:
-C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_ptr.h:
-C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell_info.h:
-C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell.h:
-C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_ptr.h:

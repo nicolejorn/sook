@@ -26,10 +26,14 @@ npc.o: C:/Users/sadie/programming/butano-17.5.0/games/sook/src/npc.cpp \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_memory_alias.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_string_view.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vblank_callback_type.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_ptr.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_ptr.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_point.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_point.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_point_fwd.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell_info.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_ptr.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_keypad.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/npc.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_sook.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_item.h \
@@ -68,10 +72,14 @@ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_optional.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_memory_alias.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_string_view.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vblank_callback_type.h:
-C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_ptr.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_ptr.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_point.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_point.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_point_fwd.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell_info.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_ptr.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_keypad.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/npc.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_sook.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_item.h:
