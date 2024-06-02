@@ -20,8 +20,8 @@ Npc::Npc(const bn::sprite_ptr npc_sprite)
 void Npc::move_npc(int firstX, int firstY) {
     bn::point npc_map_position(firstX, firstY);
     bn::point new_npc_map_position = npc_map_position;
-    bn::fixed npc_sprite_x = (npc_map_position.x()); 
-    bn::fixed npc_sprite_y = (npc_map_position.y()); 
+    npc_sprite_x = (npc_map_position.x()); 
+    npc_sprite_y = (npc_map_position.y()); 
 
     while (npc_sprite_x < 50) {
         if(bn::keypad::left_pressed())

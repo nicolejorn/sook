@@ -134,6 +134,8 @@ int main()
 
     while(true)
     {
+        //I should put in reset here like the sample games did
+
         //this is where the title screen graphic will go (or it will go inside title_text_scene)
         title_text_scene(text_generator);
         bn::core::update();
