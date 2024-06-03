@@ -90,7 +90,8 @@ namespace
         //like for finding the hat, have the player control him until they reach a certain x and y where the hat is
         //bool hatFound = false;
         Player player(bn::sprite_items::truman2.create_sprite(32, 32));
-        player.move_player(32, 32); 
+        //player.move_player(32, 32); 
+        player.move_player(32, 32, player.left() < 50);
 
         //have "find your friend's hat" written w/ smaller font in top left corner
 
@@ -110,7 +111,7 @@ namespace
         Npc sook(bn::sprite_items::sook.create_sprite(-48, -48));
         Npc queenie(bn::sprite_items::queenie.create_sprite(-80, -48));
         //sook.setTop(sook.top() + 64);
-        player.move_player(-16, -48);  
+        player.move_player(-16, -48, player.top() > 50);  
         //sook.move_npc(-48, -48); 
         //queenie.move_npc(-80, -48); 
     }
