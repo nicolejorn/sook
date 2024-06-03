@@ -9,8 +9,16 @@ public:
 
     void move_player(int firstX, int firstY);
 
-    inline float top() const { return this->y; }
-    inline float left() const { return this->x; }
+    inline bn::fixed top() const { return this->player_sprite_y; }
+    inline bn::fixed left() const { return this->player_sprite_x; }
+    inline void setTop(bn::fixed t) {
+        this->player_sprite_y = t;
+        player_sprite.set_position(this->player_sprite_x, this->player_sprite_y);
+    }
+    inline void setLeft(bn::fixed l) {
+        this->player_sprite_x = l;
+        player_sprite.set_position(this->player_sprite_x, this->player_sprite_y);
+    }
     /* inline float right() const { return this->x + 32; }
     inline float bottom() const { return this->y + 32; }
     inline float width() const { return 32; }
@@ -19,8 +27,8 @@ public:
 
 private:
     bn::sprite_ptr player_sprite;
-    float y;
-    float x;
+    bn::fixed player_sprite_x;
+    bn::fixed player_sprite_y;
     //might use player_sprite_x and player_sprite_y instead here
 };
 

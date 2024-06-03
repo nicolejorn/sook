@@ -60,7 +60,6 @@ namespace
 
     void dialogue_scene(bn::sprite_text_generator& text_generator, bn::string_view& dialogue)
     {
-        //the text part works fine, but creating the sprites gives me an error
         //bn::sprite_text_generator text_generator(common::variable_8x16_sprite_font);
         bn::sprite_palette_item original_palette_item = text_generator.palette_item();
         text_generator.set_center_alignment();
@@ -70,10 +69,8 @@ namespace
 
         //const bn::sprite_palette_item& palette_item = bn::sprite_items::sook.palette_item();
         //bn::sprite_ptr sook = bn::sprite_items::sook.create_sprite(-32, 32);
-        //bn::sprite_ptr truman = bn::sprite_items::truman.create_sprite(-32, -32);
 
         Player player(bn::sprite_items::truman2.create_sprite(32, 32));
-        //create_player(32,32);
 
         while (!bn::keypad::start_pressed())
         {
@@ -112,9 +109,10 @@ namespace
         Player player(bn::sprite_items::truman2.create_sprite(-16, -48));
         Npc sook(bn::sprite_items::sook.create_sprite(-48, -48));
         Npc queenie(bn::sprite_items::queenie.create_sprite(-80, -48));
+        //sook.setTop(sook.top() + 64);
         player.move_player(-16, -48);  
-        sook.move_npc(-48, -48); 
-        queenie.move_npc(-80, -48); 
+        //sook.move_npc(-48, -48); 
+        //queenie.move_npc(-80, -48); 
     }
 }
 
@@ -149,11 +147,9 @@ int main()
         help_find_hat(text_generator);
         bn::core::update();
 
+        //he has to pick pecans, have Sook and Queenie follow him EarthBound-style
         pick_pecans();
         bn::core::update();
-
-        //he has to pick pecans
-        //have Sook and Queenie follow him EarthBound-style
 
         //for the "caarackle" this could be a good place to use sound effects
     }

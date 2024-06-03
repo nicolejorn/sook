@@ -18,7 +18,11 @@ Npc::Npc(const bn::sprite_ptr npc_sprite)
 }
 
 void Npc::move_npc(int firstX, int firstY) {
-    bn::point npc_map_position(firstX, firstY);
+    npc_sprite.set_position(npc_sprite_x, npc_sprite_y);
+    bn::core::update();
+}
+
+    /*bn::point npc_map_position(firstX, firstY);
     bn::point new_npc_map_position = npc_map_position;
     npc_sprite_x = (npc_map_position.x()); 
     npc_sprite_y = (npc_map_position.y()); 
@@ -47,29 +51,4 @@ void Npc::move_npc(int firstX, int firstY) {
         npc_sprite_y = (npc_map_position.y()); //- (map_item.dimensions().height() * 4) + 4;
         npc_sprite.set_position(npc_sprite_x, npc_sprite_y);
         bn::core::update();
-    }
-}
-
-/*void create_npc(int name, int firstX, int firstY) {
-    switch (name) {
-        case 1: {
-            bn::sprite_ptr sook_sprite = bn::sprite_items::sook.create_sprite(firstX, firstY);
-            bn::point sook_map_position(firstX, firstY);
-            sook_sprite.set_position(firstX, firstY);
-            break;
-        }
-        case 2: {
-            bn::sprite_ptr queenie_sprite = bn::sprite_items::queenie.create_sprite(firstX, firstY);
-            bn::point queenie_map_position(firstX, firstY);
-            queenie_sprite.set_position(firstX, firstY);
-            break;
-        }
-        default: {
-            bn::sprite_ptr sook_sprite = bn::sprite_items::sook.create_sprite(firstX, firstY);
-            bn::point sook_map_position(firstX, firstY);
-            sook_sprite.set_position(firstX, firstY);
-            break;
-        }
-    } 
-}*/
-
+    } */

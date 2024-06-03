@@ -17,8 +17,8 @@ Player::Player(const bn::sprite_ptr player_sprite)
 void Player::move_player(int firstX, int firstY) {
     bn::point player_map_position(firstX, firstY);
     bn::point new_player_map_position = player_map_position;
-    bn::fixed player_sprite_x = (player_map_position.x()); 
-    bn::fixed player_sprite_y = (player_map_position.y()); 
+    player_sprite_x = (player_map_position.x()); 
+    player_sprite_y = (player_map_position.y()); 
 
     while (player_sprite_x < 50) {
         if(bn::keypad::left_pressed())
