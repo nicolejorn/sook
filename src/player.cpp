@@ -9,23 +9,29 @@
 #include "bn_sprite_items_truman2.h"
 //#include "bn_sprite_text_generator.h"
 
+namespace {
+    bn::point player_map_position(32, 32);
+    bn::point new_player_map_position = player_map_position;
+}
+
 Player::Player(const bn::sprite_ptr player_sprite)
     : player_sprite(player_sprite) {
         //bn::point player_map_position(firstX, firstY);
-        bn::point player_map_position(32, 32);
-        bn::point new_player_map_position = player_map_position;
+
+        //bn::point player_map_position(32, 32);
+        //bn::point new_player_map_position = player_map_position;
         player_sprite_x = (player_map_position.x()); 
         player_sprite_y = (player_map_position.y()); 
         //add bool movable parameter, this will call this->move_player if true
 }
 
 void Player::move_player(int firstX, int firstY, bool goal_reached) {
-    bn::point player_map_position(firstX, firstY);
-    bn::point new_player_map_position = player_map_position;
+    //bn::point player_map_position(firstX, firstY);
+    //bn::point new_player_map_position = player_map_position;
     player_sprite_x = (player_map_position.x()); 
     player_sprite_y = (player_map_position.y()); 
 
-    while (player_sprite_x < 50) {
+    while (this->left() < 50) {
         if(bn::keypad::left_pressed())
         {
             new_player_map_position.set_x(new_player_map_position.x() - 8);
@@ -53,5 +59,7 @@ void Player::move_player(int firstX, int firstY, bool goal_reached) {
         //how to call set_top and get_top from here?
         bn::core::update();
     }
+    this->setLeft(0);
+    player_sprite_x = 0;
 }
 

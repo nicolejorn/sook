@@ -21,6 +21,7 @@
 #include "bn_sprite_affine_second_attributes_hbe_ptr.h"
 #include "bn_sprite_regular_second_attributes_hbe_ptr.h"
 #include "bn_sprite_ptr.h"
+#include "bn_memory.h"
 
 #include "bn_sprite_items_truman2.h"
 #include "bn_sprite_items_sook.h"
@@ -34,8 +35,9 @@
 #include "fixed_32x64_sprite_font.h"
 #include "player.h"
 #include "npc.h"
-
-//https://soundbible.com/1987-Rockslide-Small.html
+#include "title.h"
+#include "scene.h"
+#include <iostream>
 
 namespace
 {
@@ -44,8 +46,6 @@ namespace
 
     void title_text_scene(bn::sprite_text_generator& text_generator) //from the example "text"
     {
-        //bn::sprite_text_generator text_generator(common::variable_8x16_sprite_font);
-        bn::sprite_palette_item original_palette_item = text_generator.palette_item();
         text_generator.set_center_alignment();
 
         bn::vector<bn::sprite_ptr, 32> text_sprites;
@@ -58,16 +58,14 @@ namespace
         }
     }
 
-    void dialogue_scene(bn::sprite_text_generator& text_generator, bn::string_view& dialogue)
+    void dialogue_scene(bn::sprite_text_generator& text_generator, const bn::string_view& dialogue)
     {
-        //bn::sprite_text_generator text_generator(common::variable_8x16_sprite_font);
-        bn::sprite_palette_item original_palette_item = text_generator.palette_item();
+        //bn::sprite_palette_item original_palette_item = text_generator.palette_item();
         text_generator.set_center_alignment();
 
         bn::vector<bn::sprite_ptr, 32> text_sprites;
         text_generator.generate(0, text_y_limit, dialogue, text_sprites);
 
-        //const bn::sprite_palette_item& palette_item = bn::sprite_items::sook.palette_item();
         //bn::sprite_ptr sook = bn::sprite_items::sook.create_sprite(-32, 32);
 
         Player player(bn::sprite_items::truman2.create_sprite(32, 32));
@@ -80,7 +78,6 @@ namespace
 
     void help_find_hat(bn::sprite_text_generator& text_generator)
     {
-        bn::sprite_palette_item original_palette_item = text_generator.palette_item();
         text_generator.set_center_alignment();
 
         bn::vector<bn::sprite_ptr, 32> text_sprites;
@@ -94,6 +91,8 @@ namespace
         player.move_player(32, 32, player.left() < 50);
 
         //have "find your friend's hat" written w/ smaller font in top left corner
+
+        //if I comment out move_player and uncomment the start_pressed thing it still won't show NPCs
 
         /*while (!bn::keypad::start_pressed())
         {
@@ -112,6 +111,9 @@ namespace
         Npc queenie(bn::sprite_items::queenie.create_sprite(-80, -48));
         //sook.setTop(sook.top() + 64);
         player.move_player(-16, -48, player.top() > 50);  
+
+        //player.move_player(-16, -48, true);  
+
         //sook.move_npc(-48, -48); 
         //queenie.move_npc(-80, -48); 
     }
@@ -124,7 +126,7 @@ int main()
     bn::sprite_text_generator text_generator(common::variable_8x16_sprite_font);
     bn::bg_palettes::set_transparent_color(bn::color(16, 16, 16));
 
-    bn::string_view dialogue_text_lines[] = {
+    constexpr bn::string_view dialogue_text_lines[] = {
        "Oh my, it's fruitcake weather!",
        "Fetch our buggy. Help me find my hat.",
     };
@@ -133,10 +135,14 @@ int main()
 
     while(true)
     {
-        //I should put in reset here like the sample games did
+        //I should put in new here like the sample games did
 
         //this is where the title screen graphic will go (or it will go inside title_text_scene)
+
         title_text_scene(text_generator);
+
+        //look at varoom for easier format
+        //scene.reset(new title(text_generator));
         bn::core::update();
 
         dialogue_scene(text_generator, dialogue_text_lines[0]); 
@@ -146,7 +152,7 @@ int main()
         bn::core::update();
 
         help_find_hat(text_generator);
-        bn::core::update();
+        //bn::core::update();
 
         //he has to pick pecans, have Sook and Queenie follow him EarthBound-style
         pick_pecans();
