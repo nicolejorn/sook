@@ -25,13 +25,14 @@ Player::Player(const bn::sprite_ptr player_sprite)
         //add bool movable parameter, this will call this->move_player if true
 }
 
-void Player::move_player(int firstX, int firstY, bool goal_reached) {
+//int firstX, int firstY, bool goal_reached
+void Player::move_player() {
     //bn::point player_map_position(firstX, firstY);
     //bn::point new_player_map_position = player_map_position;
     player_sprite_x = (player_map_position.x()); 
     player_sprite_y = (player_map_position.y()); 
 
-    while (this->left() < 50) {
+    
         if(bn::keypad::left_pressed())
         {
             new_player_map_position.set_x(new_player_map_position.x() - 8);
@@ -58,8 +59,6 @@ void Player::move_player(int firstX, int firstY, bool goal_reached) {
         this->setTop(player_sprite_y);
         //how to call set_top and get_top from here?
         bn::core::update();
-    }
-    this->setLeft(0);
-    player_sprite_x = 0;
 }
+    //this->setLeft(0); player_sprite_x = 0; }
 

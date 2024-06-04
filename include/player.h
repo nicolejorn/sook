@@ -7,7 +7,7 @@ class Player {
 public:
     Player(const bn::sprite_ptr player_sprite);
 
-    void move_player(int firstX, int firstY, bool goal_reached);
+    void move_player();
 
     inline bn::fixed top() const { return this->player_sprite_y; }
     inline bn::fixed left() const { return this->player_sprite_x; }

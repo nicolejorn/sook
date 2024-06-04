@@ -86,7 +86,13 @@ namespace
         Npc* sook = new Npc (bn::sprite_items::sook.create_sprite(-48, -48));
         Npc* queenie = new Npc (bn::sprite_items::queenie.create_sprite(-80, -48));
         //sook.setTop(sook.top() + 64);
-        player->move_player(-16, -48, player->top() < 50);  
+        while (player->top() < 50) {
+            player->move_player(); 
+        }
+        //how to make them follow - function overloading?
+        delete player;
+        delete sook;
+        delete queenie; 
 
         //player.move_player(-16, -48, true);  
 
@@ -106,7 +112,9 @@ namespace
         //bool hatFound = false;
         Player* player = new Player (bn::sprite_items::truman2.create_sprite(32, 32));
         //player.move_player(32, 32); 
-        player->move_player(32, 32, player->left() < 50);
+        while(player->left() < 50) {
+            player->move_player();
+        }
         delete player; //without the delete the player stays but with the delete he disappears
         //pick_pecans();
 
