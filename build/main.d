@@ -104,22 +104,7 @@ main.o: C:/Users/sadie/programming/butano-17.5.0/games/sook/src/main.cpp \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/fixed_32x64_sprite_font.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_fixed_32x64_font.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/player.h \
- C:/Users/sadie/programming/butano-17.5.0/games/sook/include/npc.h \
- C:/Users/sadie/programming/butano-17.5.0/games/sook/include/title.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_array.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vector.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_music_actions.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_music.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_blending_actions.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_blending.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_affine_mat_attributes_hbe_ptr.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_affine_mat_pa_register_hbe_ptr.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_affine_mat_pb_register_hbe_ptr.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_affine_mat_pc_register_hbe_ptr.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_affine_mat_pd_register_hbe_ptr.h \
- C:/Users/sadie/programming/butano-17.5.0/games/sook/include/scene.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_optional.h \
- C:/Users/sadie/programming/butano-17.5.0/games/sook/include/scene.h
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/npc.h
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_core.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_span.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_array.h:
@@ -226,18 +211,3 @@ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/fixed_32x64_sprite_f
 C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_fixed_32x64_font.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/player.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/npc.h:
-C:/Users/sadie/programming/butano-17.5.0/games/sook/include/title.h:
-C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_array.h:
-C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vector.h:
-C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_music_actions.h:
-C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_music.h:
-C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_blending_actions.h:
-C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_blending.h:
-C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_affine_mat_attributes_hbe_ptr.h:
-C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_affine_mat_pa_register_hbe_ptr.h:
-C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_affine_mat_pb_register_hbe_ptr.h:
-C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_affine_mat_pc_register_hbe_ptr.h:
-C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_affine_mat_pd_register_hbe_ptr.h:
-C:/Users/sadie/programming/butano-17.5.0/games/sook/include/scene.h:
-C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_optional.h:
-C:/Users/sadie/programming/butano-17.5.0/games/sook/include/scene.h:

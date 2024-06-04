@@ -35,8 +35,8 @@
 #include "fixed_32x64_sprite_font.h"
 #include "player.h"
 #include "npc.h"
-#include "title.h"
-#include "scene.h"
+//#include "title.h"
+//#include "scene.h"
 #include <iostream>
 
 namespace
@@ -76,6 +76,24 @@ namespace
         }
     }
 
+    void pick_pecans() { 
+        //bn::sprite_text_generator& text_generator
+
+        //Need some way of being able to move all 3 at same time
+        //Change while's placement? Have player create two NPCs when created?
+        bn::bg_palettes::set_transparent_color(bn::color(1, 16, 1));
+        Player* player = new Player (bn::sprite_items::truman2.create_sprite(-16, -48));
+        Npc* sook = new Npc (bn::sprite_items::sook.create_sprite(-48, -48));
+        Npc* queenie = new Npc (bn::sprite_items::queenie.create_sprite(-80, -48));
+        //sook.setTop(sook.top() + 64);
+        player->move_player(-16, -48, player->top() < 50);  
+
+        //player.move_player(-16, -48, true);  
+
+        //sook.move_npc(-48, -48); 
+        //queenie.move_npc(-80, -48); 
+    }
+
     void help_find_hat(bn::sprite_text_generator& text_generator)
     {
         text_generator.set_center_alignment();
@@ -86,37 +104,18 @@ namespace
         //how to have a boolean parameter for different conditions?
         //like for finding the hat, have the player control him until they reach a certain x and y where the hat is
         //bool hatFound = false;
-        Player player(bn::sprite_items::truman2.create_sprite(32, 32));
+        Player* player = new Player (bn::sprite_items::truman2.create_sprite(32, 32));
         //player.move_player(32, 32); 
-        player.move_player(32, 32, player.left() < 50);
+        player->move_player(32, 32, player->left() < 50);
+        delete player; //without the delete the player stays but with the delete he disappears
+        //pick_pecans();
 
         //have "find your friend's hat" written w/ smaller font in top left corner
 
         //if I comment out move_player and uncomment the start_pressed thing it still won't show NPCs
 
-        /*while (!bn::keypad::start_pressed())
-        {
-            bn::core::update();
-        }*/
     }
 
-    void pick_pecans() { 
-        //bn::sprite_text_generator& text_generator
-
-        //Need some way of being able to move all 3 at same time
-        //Change while's placement? Have player create two NPCs when created?
-        bn::bg_palettes::set_transparent_color(bn::color(1, 16, 1));
-        Player player(bn::sprite_items::truman2.create_sprite(-16, -48));
-        Npc sook(bn::sprite_items::sook.create_sprite(-48, -48));
-        Npc queenie(bn::sprite_items::queenie.create_sprite(-80, -48));
-        //sook.setTop(sook.top() + 64);
-        player.move_player(-16, -48, player.top() > 50);  
-
-        //player.move_player(-16, -48, true);  
-
-        //sook.move_npc(-48, -48); 
-        //queenie.move_npc(-80, -48); 
-    }
 }
 
 int main()
