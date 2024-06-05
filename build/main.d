@@ -87,6 +87,11 @@ main.o: C:/Users/sadie/programming/butano-17.5.0/games/sook/src/main.cpp \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_memory.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_unique_ptr.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_unique_ptr_fwd.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_actions.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_handle.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sound_items.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_item.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_truman2.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_item.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_sook.h \
@@ -193,6 +198,11 @@ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_ptr.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_memory.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_unique_ptr.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_unique_ptr_fwd.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_actions.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_handle.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sound_items.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_item.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_truman2.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_item.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_sook.h:

@@ -23,6 +23,9 @@
 #include "bn_sprite_ptr.h"
 #include "bn_memory.h"
 
+#include "bn_sound_actions.h"
+#include "bn_sound_items.h"
+
 #include "bn_sprite_items_truman2.h"
 #include "bn_sprite_items_sook.h"
 #include "bn_sprite_items_queenie.h"
@@ -68,8 +71,6 @@ namespace
 
         //bn::sprite_ptr sook = bn::sprite_items::sook.create_sprite(-32, 32);
 
-        Player player(bn::sprite_items::truman2.create_sprite(32, 32));
-
         while (!bn::keypad::start_pressed())
         {
             bn::core::update();
@@ -81,7 +82,7 @@ namespace
 
         //Need some way of being able to move all 3 at same time
         //Change while's placement? Have player create two NPCs when created?
-        bn::bg_palettes::set_transparent_color(bn::color(1, 16, 1));
+        //bn::bg_palettes::set_transparent_color(bn::color(1, 16, 1));
         Player* player = new Player (bn::sprite_items::truman2.create_sprite(-16, -48));
         Npc* sook = new Npc (bn::sprite_items::sook.create_sprite(-48, -48));
         Npc* queenie = new Npc (bn::sprite_items::queenie.create_sprite(-80, -48));
@@ -124,6 +125,25 @@ namespace
 
     }
 
+    void back_in_kitchen()
+    {
+        bn::bg_palettes::set_transparent_color(bn::color(16, 16, 16));
+        Player* player = new Player (bn::sprite_items::truman2.create_sprite(-16, -48));
+        Npc* sook = new Npc (bn::sprite_items::sook.create_sprite(-48, -48));
+        Npc* queenie = new Npc (bn::sprite_items::queenie.create_sprite(-80, -48));
+        //for the "caarackle" this could be a good place to use sound effects
+        bn::sound_items::crunch.play(0.5);
+        //he needs to walk up to Queenie. That triggers dialogue from the friend, then goes to next scene
+        while ((player->left() > -60) && (player->top() > -20))
+        {
+            player->move_player();
+        }
+
+        delete player;
+        delete sook;
+        delete queenie; 
+    }
+
 }
 
 int main()
@@ -134,8 +154,12 @@ int main()
     bn::bg_palettes::set_transparent_color(bn::color(16, 16, 16));
 
     constexpr bn::string_view dialogue_text_lines[] = {
-       "Oh my, it's fruitcake weather!",
-       "Fetch our buggy. Help me find my hat.",
+        "Oh my, it's fruitcake weather!",
+        "Fetch our buggy. Help me find my hat.",
+        "We mustn't, Buddy.",
+        "If we start, we won't stop.",
+        "And there's scarcely enough.", 
+        "For forty cakes."
     };
 
     //bn::string_view goal_text_lines[] for finding hat and picking pecans
@@ -148,23 +172,39 @@ int main()
 
         title_text_scene(text_generator);
 
-        //look at varoom for easier format
-        //scene.reset(new title(text_generator));
         bn::core::update();
 
+        Player* player = new Player (bn::sprite_items::truman2.create_sprite(32, 32));
+        //put Player player(bn::sprite_items::truman2.create_sprite(32, 32)); so it stops duplicating him
         dialogue_scene(text_generator, dialogue_text_lines[0]); 
         bn::core::update();
 
         dialogue_scene(text_generator, dialogue_text_lines[1]); 
         bn::core::update();
+        delete player;
 
         help_find_hat(text_generator);
         //bn::core::update();
 
         //he has to pick pecans, have Sook and Queenie follow him EarthBound-style
+        bn::bg_palettes::set_transparent_color(bn::color(1, 16, 1));
         pick_pecans();
         bn::core::update();
 
-        //for the "caarackle" this could be a good place to use sound effects
+        back_in_kitchen();
+        dialogue_scene(text_generator, dialogue_text_lines[2]);
+        bn::core::update();
+        dialogue_scene(text_generator, dialogue_text_lines[3]);
+        bn::core::update();
+        dialogue_scene(text_generator, dialogue_text_lines[4]);
+        bn::core::update();
+        dialogue_scene(text_generator, dialogue_text_lines[5]);
+        bn::core::update();
+
+        //eating_supper(); 
+        //or maybe this could be several dialogue_scenes instead
+
+        //them taking the bead purse could be a minigame where you can't walk too close to other people
+
     }
 }
