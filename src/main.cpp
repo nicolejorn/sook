@@ -77,30 +77,6 @@ namespace
         }
     }
 
-    void pick_pecans() { 
-        //bn::sprite_text_generator& text_generator
-
-        //Need some way of being able to move all 3 at same time
-        //Change while's placement? Have player create two NPCs when created?
-        //bn::bg_palettes::set_transparent_color(bn::color(1, 16, 1));
-        Player* player = new Player (bn::sprite_items::truman2.create_sprite(-16, -48));
-        Npc* sook = new Npc (bn::sprite_items::sook.create_sprite(-48, -48));
-        Npc* queenie = new Npc (bn::sprite_items::queenie.create_sprite(-80, -48));
-        //sook.setTop(sook.top() + 64);
-        while (player->top() < 50) {
-            player->move_player(); 
-        }
-        //how to make them follow - function overloading?
-        delete player;
-        delete sook;
-        delete queenie; 
-
-        //player.move_player(-16, -48, true);  
-
-        //sook.move_npc(-48, -48); 
-        //queenie.move_npc(-80, -48); 
-    }
-
     void help_find_hat(bn::sprite_text_generator& text_generator)
     {
         text_generator.set_center_alignment();
@@ -125,6 +101,30 @@ namespace
 
     }
 
+    void pick_pecans() { 
+        //bn::sprite_text_generator& text_generator
+
+        //Need some way of being able to move all 3 at same time
+        //Change while's placement? Have player create two NPCs when created?
+        //bn::bg_palettes::set_transparent_color(bn::color(1, 16, 1));
+        Player* player = new Player (bn::sprite_items::truman2.create_sprite(-16, -48));
+        Npc* sook = new Npc (bn::sprite_items::sook.create_sprite(-48, -48));
+        Npc* queenie = new Npc (bn::sprite_items::queenie.create_sprite(-80, -48));
+        //sook.setTop(sook.top() + 64);
+        while (player->top() < 50) {
+            player->move_player(); 
+        }
+        //how to make them follow - function overloading?
+        delete player;
+        delete sook;
+        delete queenie; 
+
+        //player.move_player(-16, -48, true);  
+
+        //sook.move_npc(-48, -48); 
+        //queenie.move_npc(-80, -48); 
+    }
+
     void back_in_kitchen()
     {
         bn::bg_palettes::set_transparent_color(bn::color(16, 16, 16));
@@ -134,6 +134,7 @@ namespace
         //for the "caarackle" this could be a good place to use sound effects
         bn::sound_items::crunch.play(0.5);
         //he needs to walk up to Queenie. That triggers dialogue from the friend, then goes to next scene
+        //BUG: will immediately end if player was too far left after the first part
         while ((player->left() > -60) && (player->top() > -20))
         {
             player->move_player();
@@ -166,7 +167,6 @@ int main()
 
     while(true)
     {
-        //I should put in new here like the sample games did
 
         //this is where the title screen graphic will go (or it will go inside title_text_scene)
 
