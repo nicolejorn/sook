@@ -23,6 +23,7 @@
 #include "bn_sprite_ptr.h"
 #include "bn_memory.h"
 
+#include "bn_sound.h"
 #include "bn_sound_actions.h"
 #include "bn_sound_items.h"
 
@@ -108,6 +109,8 @@ namespace
         //Change while's placement? Have player create two NPCs when created?
         //bn::bg_palettes::set_transparent_color(bn::color(1, 16, 1));
         Player* player = new Player (bn::sprite_items::truman2.create_sprite(-16, -48));
+        //player->setLeft(-16);
+        //player->setTop(-48);
         Npc* sook = new Npc (bn::sprite_items::sook.create_sprite(-48, -48));
         Npc* queenie = new Npc (bn::sprite_items::queenie.create_sprite(-80, -48));
         //sook.setTop(sook.top() + 64);
@@ -129,6 +132,8 @@ namespace
     {
         bn::bg_palettes::set_transparent_color(bn::color(16, 16, 16));
         Player* player = new Player (bn::sprite_items::truman2.create_sprite(-16, -48));
+        //player->setLeft(-16);
+        //player->setTop(-48);
         Npc* sook = new Npc (bn::sprite_items::sook.create_sprite(-48, -48));
         Npc* queenie = new Npc (bn::sprite_items::queenie.create_sprite(-80, -48));
         //for the "caarackle" this could be a good place to use sound effects

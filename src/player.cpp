@@ -10,16 +10,13 @@
 //#include "bn_sprite_text_generator.h"
 
 namespace {
-    bn::point player_map_position(32, 32);
+    bn::point player_map_position(32, 32); //this needs to be fixed
     bn::point new_player_map_position = player_map_position;
 }
 
 Player::Player(const bn::sprite_ptr player_sprite)
     : player_sprite(player_sprite) {
-        //bn::point player_map_position(firstX, firstY);
-
-        //bn::point player_map_position(32, 32);
-        //bn::point new_player_map_position = player_map_position;
+        //player_map_position(firstX, firstY);
         player_sprite_x = (player_map_position.x()); 
         player_sprite_y = (player_map_position.y()); 
         //add bool movable parameter, this will call this->move_player if true
