@@ -88,7 +88,7 @@ namespace
         //how to have a boolean parameter for different conditions?
         //like for finding the hat, have the player control him until they reach a certain x and y where the hat is
         //bool hatFound = false;
-        Player* player = new Player (bn::sprite_items::truman2.create_sprite(32, 32));
+        Player* player = new Player(); //.create_sprite(32, 32)
         //player.move_player(32, 32); 
         while(player->left() < 50) {
             player->move_player();
@@ -108,7 +108,7 @@ namespace
         //Need some way of being able to move all 3 at same time
         //Change while's placement? Have player create two NPCs when created?
         //bn::bg_palettes::set_transparent_color(bn::color(1, 16, 1));
-        Player* player = new Player (bn::sprite_items::truman2.create_sprite(-16, -48));
+        Player* player = new Player(); //.create_sprite(-16, -48)
         //player->setLeft(-16);
         //player->setTop(-48);
         Npc* sook = new Npc (bn::sprite_items::sook.create_sprite(-48, -48));
@@ -131,7 +131,7 @@ namespace
     void back_in_kitchen()
     {
         bn::bg_palettes::set_transparent_color(bn::color(16, 16, 16));
-        Player* player = new Player (bn::sprite_items::truman2.create_sprite(-16, -48));
+        Player* player = new Player(); //.create_sprite(-16, -48)
         //player->setLeft(-16);
         //player->setTop(-48);
         Npc* sook = new Npc (bn::sprite_items::sook.create_sprite(-48, -48));
@@ -168,7 +168,7 @@ int main()
         "For forty cakes."
     };
 
-    //bn::string_view goal_text_lines[] for finding hat and picking pecans
+    //bn::string_view goal_text_lines[] for finding hat, picking pecans, and going to Mr. Haha's house for ingredients
 
     while(true)
     {
@@ -179,7 +179,7 @@ int main()
 
         bn::core::update();
 
-        Player* player = new Player (bn::sprite_items::truman2.create_sprite(32, 32));
+        Player* player = new Player(); //bn::sprite_items::truman2.create_sprite(32, 32)
         //put Player player(bn::sprite_items::truman2.create_sprite(32, 32)); so it stops duplicating him
         dialogue_scene(text_generator, dialogue_text_lines[0]); 
         bn::core::update();
