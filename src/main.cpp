@@ -85,10 +85,7 @@ namespace
         bn::vector<bn::sprite_ptr, 32> text_sprites;
         text_generator.generate(0, text_y_limit, "We've thirty cakes to bake.", text_sprites);
 
-        //how to have a boolean parameter for different conditions?
-        //like for finding the hat, have the player control him until they reach a certain x and y where the hat is
-        //bool hatFound = false;
-        Player* player = new Player(bn::sprite_items::truman2); //.create_sprite(32, 32)
+        Player* player = new Player(bn::sprite_items::truman2.create_sprite(32, 32)); //
         //player.move_player(32, 32); 
         while(player->left() < 50) {
             player->move_player();
@@ -108,7 +105,7 @@ namespace
         //Need some way of being able to move all 3 at same time
         //Change while's placement? Have player create two NPCs when created?
         //bn::bg_palettes::set_transparent_color(bn::color(1, 16, 1));
-        Player* player = new Player(bn::sprite_items::truman2); //.create_sprite(-16, -48)
+        Player* player = new Player(bn::sprite_items::truman2.create_sprite(-16, -48));
         //player->setLeft(-16);
         //player->setTop(-48);
         Npc* sook = new Npc (bn::sprite_items::sook.create_sprite(-48, -48));
@@ -131,7 +128,7 @@ namespace
     void back_in_kitchen()
     {
         bn::bg_palettes::set_transparent_color(bn::color(16, 16, 16));
-        Player* player = new Player(bn::sprite_items::truman2); //.create_sprite(-16, -48)
+        Player* player = new Player(bn::sprite_items::truman2.create_sprite(-16, -48)); //.create_sprite(-16, -48)
         //player->setLeft(-16);
         //player->setTop(-48);
         Npc* sook = new Npc (bn::sprite_items::sook.create_sprite(-48, -48));
@@ -172,15 +169,13 @@ int main()
 
     while(true)
     {
-
         //this is where the title screen graphic will go (or it will go inside title_text_scene)
 
         title_text_scene(text_generator);
 
         bn::core::update();
 
-        Player* player = new Player(bn::sprite_items::truman2); //bn::sprite_items::truman2.create_sprite(32, 32)
-        //put Player player(bn::sprite_items::truman2.create_sprite(32, 32)); so it stops duplicating him
+        Player* player = new Player(bn::sprite_items::truman2.create_sprite(32, 32)); //bn::sprite_items::truman2
         dialogue_scene(text_generator, dialogue_text_lines[0]); 
         bn::core::update();
 
@@ -189,7 +184,7 @@ int main()
         delete player;
 
         help_find_hat(text_generator);
-        //bn::core::update();
+        bn::core::update();
 
         //he has to pick pecans, have Sook and Queenie follow him EarthBound-style
         bn::bg_palettes::set_transparent_color(bn::color(1, 16, 1));

@@ -16,8 +16,9 @@ namespace {
     //bn::point new_player_map_position = player_map_position;
 }
 
-Player::Player(const bn::sprite_ptr player_sprite) //const bn::sprite_ptr player_sprite
-    : _body_sprite_item(player_sprite){ //player_sprite(player_sprite) 
+Player::Player(const bn::sprite_ptr& player_sprite)
+    : _body_sprite_item(player_sprite){ 
+        //player_sprite(player_sprite) 
         //player_map_position(firstX, firstY);
         //player_sprite_x = (player_map_position.x()); 
         //player_sprite_y = (player_map_position.y()); 
