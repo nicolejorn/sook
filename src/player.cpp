@@ -2,22 +2,22 @@
 #include "bn_keypad.h"
 #include "bn_regular_bg_ptr.h"
 #include "bn_regular_bg_map_cell_info.h"
-#include "bn_sprite_ptr.h"
+//#include "bn_sprite_ptr.h"
 #include "bn_fixed_rect.h"
 #include "bn_fixed_point.h"
+#include "bn_sprite_builder.h"
 
 #include "player.h"
 
 #include "bn_sprite_items_truman2.h"
-//#include "bn_sprite_text_generator.h"
 
 namespace {
     //bn::point player_map_position(32, 32); 
     //bn::point new_player_map_position = player_map_position;
 }
 
-Player::Player() //const bn::sprite_ptr player_sprite
-    : _body_sprite_item(bn::sprite_items::truman2){ //player_sprite(player_sprite)
+Player::Player(const bn::sprite_ptr player_sprite) //const bn::sprite_ptr player_sprite
+    : _body_sprite_item(player_sprite){ //player_sprite(player_sprite) 
         //player_map_position(firstX, firstY);
         //player_sprite_x = (player_map_position.x()); 
         //player_sprite_y = (player_map_position.y()); 
@@ -26,40 +26,30 @@ Player::Player() //const bn::sprite_ptr player_sprite
 
 //int firstX, int firstY, bool goal_reached
 void Player::move_player() {
-    //bn::point player_map_position(firstX, firstY);
-    //bn::point new_player_map_position = player_map_position;
-    player_sprite_x = (player_map_position.x()); 
-    player_sprite_y = (player_map_position.y()); 
-
     
         if(bn::keypad::left_pressed())
         {
-            body_sprite.set_x(new_player_map_position.x() - 8);
+            body_sprite.set_x(_body_position.x() - 8);
         }
         else if(bn::keypad::right_pressed())
         {
-            body_sprite.set_x(new_player_map_position.x() + 8);
+            body_sprite.set_x(_body_position.x() + 8);
         }
 
         if(bn::keypad::up_pressed())
         {
-            body_sprite.set_y(new_player_map_position.y() - 8);
+            body_sprite.set_y(_body_position.y() - 8);
         }
         else if(bn::keypad::down_pressed())
         {
-            body_sprite.set_y(new_player_map_position.y() + 8); //new_player_map_position.set_y
+            body_sprite.set_y(_body_position.y() + 8); //new_player_map_position.set_y new_player_map_position.y()
         }
 
-        //player_map_position = new_player_map_position;
-        //player_sprite_x = (player_map_position.x()); - (map_item.dimensions().width() * 4) + 4;
-        //player_sprite_y = (player_map_position.y()); - (map_item.dimensions().height() * 4) + 4;
-        //player_sprite.set_position(player_sprite_x, player_sprite_y);
-        _body_position.set_x(sprite_x);
-        _body_position.set_y(sprite_y);
-        this->setLeft(sprite_x);
-        this->setTop(sprite_y);
+        _body_position.set_x(body_sprite.x());
+        _body_position.set_y(body_sprite.y());
+        this->setLeft(body_sprite.x());
+        this->setTop(body_sprite.y()); //sprite_y
         //how to call set_top and get_top from here?
         bn::core::update();
 }
-    //this->setLeft(0); player_sprite_x = 0; }
 
