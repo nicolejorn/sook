@@ -3,10 +3,12 @@
 
 #include "bn_common.h"
 
-enum class scene_type
+namespace so {
+    enum class Scene
     {
         TITLE,
         GAME
     };
+}
 
 #endif

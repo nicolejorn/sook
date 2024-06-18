@@ -39,9 +39,6 @@
 #include "fixed_32x64_sprite_font.h"
 #include "player.h"
 #include "npc.h"
-//#include "title.h"
-//#include "scene.h"
-#include <iostream>
 
 namespace
 {
@@ -174,6 +171,10 @@ int main()
         title_text_scene(text_generator);
 
         bn::core::update();
+
+        bn::sprite_ptr player_sprite = bn::sprite_items::truman2.create_sprite(32,32);
+        player_sprite.set_visible(false);
+        so::Player player = so::Player(player_sprite);
 
         Player* player = new Player(bn::sprite_items::truman2.create_sprite(32, 32)); //bn::sprite_items::truman2
         dialogue_scene(text_generator, dialogue_text_lines[0]); 
