@@ -2,12 +2,17 @@
 #include "bn_keypad.h"
 #include "bn_regular_bg_ptr.h"
 #include "bn_regular_bg_map_cell_info.h"
-//#include "bn_sprite_ptr.h"
+#include "bn_sprite_ptr.h"
 #include "bn_fixed_rect.h"
 #include "bn_fixed_point.h"
 #include "bn_sprite_builder.h"
+#include "bn_math.h"
+#include "bn_size.h"
+#include "bn_optional.h"
+#include "bn_span.h"
+#include "bn_log.h"
 
-#include "player.h"
+#include "so_player.h"
 
 #include "bn_sprite_items_truman2.h"
 
@@ -16,13 +21,9 @@ namespace {
     //bn::point new_player_map_position = player_map_position;
 }
 
-Player::Player(const bn::sprite_ptr& player_sprite)
-    : _body_sprite_item(player_sprite){ 
-        //player_sprite(player_sprite) 
-        //player_map_position(firstX, firstY);
-        //player_sprite_x = (player_map_position.x()); 
-        //player_sprite_y = (player_map_position.y()); 
-        //add bool movable parameter, this will call this->move_player if true
+Player::Player(bn::sprite_ptr sprite)
+    : _sprite(sprite){ 
+        
 }
 
 //int firstX, int firstY, bool goal_reached
@@ -54,3 +55,8 @@ void Player::move_player() {
         bn::core::update();
 }
 
+//player_sprite(player_sprite) 
+        //player_map_position(firstX, firstY);
+        //player_sprite_x = (player_map_position.x()); 
+        //player_sprite_y = (player_map_position.y()); 
+        //add bool movable parameter, this will call this->move_player if true

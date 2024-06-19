@@ -149,9 +149,14 @@ namespace
 int main()
 {
     bn::core::init();
+    so::Scene scene = so::Scene::TITLE;
 
     bn::sprite_text_generator text_generator(common::variable_8x16_sprite_font);
     bn::bg_palettes::set_transparent_color(bn::color(16, 16, 16));
+
+    bn::sprite_ptr player_sprite = bn::sprite_items::truman2.create_sprite(32,32);
+    player_sprite.set_visible(false);
+    so::Player player = so::Player(player_sprite);
 
     constexpr bn::string_view dialogue_text_lines[] = {
         "Oh my, it's fruitcake weather!",
@@ -167,14 +172,25 @@ int main()
     while(true)
     {
         //this is where the title screen graphic will go (or it will go inside title_text_scene)
+        if(scene == so::Scene::GAME)
+        {
+            so::Game game = so::Game(player);
+            scene = game.execute(bn::fixed_point(555, 384));
+        }
+        else if(scene == so::Scene::TITLE)
+        {
+            so::Title title = so::Title();
+            scene = title.execute();
+        }
+        //player.delete_data();
+        //player.hide();
+        bn::core::update();
+    }
+}
 
-        title_text_scene(text_generator);
+/*  title_text_scene(text_generator);
 
         bn::core::update();
-
-        bn::sprite_ptr player_sprite = bn::sprite_items::truman2.create_sprite(32,32);
-        player_sprite.set_visible(false);
-        so::Player player = so::Player(player_sprite);
 
         Player* player = new Player(bn::sprite_items::truman2.create_sprite(32, 32)); //bn::sprite_items::truman2
         dialogue_scene(text_generator, dialogue_text_lines[0]); 
@@ -200,12 +216,9 @@ int main()
         dialogue_scene(text_generator, dialogue_text_lines[4]);
         bn::core::update();
         dialogue_scene(text_generator, dialogue_text_lines[5]);
-        bn::core::update();
+        bn::core::update(); */
 
         //eating_supper(); 
         //or maybe this could be several dialogue_scenes instead
 
         //them taking the bead purse could be a minigame where you can't walk too close to other people
-
-    }
-}
