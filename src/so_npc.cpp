@@ -24,11 +24,11 @@ namespace so {
     : _pos(x, y), _type(type) {
         if(_type == NPC_TYPE::SOOK)
         {
-            _sprite = bn::sprite_items::sook_sprite.create_sprite(_pos.x(), _pos.y());
+            _sprite = bn::sprite_items::sook.create_sprite(_pos.x(), _pos.y());
         }
         else if(_type == NPC_TYPE::QUEENIE)
         {
-            _sprite = bn::sprite_items::queenie_sprite.create_sprite(_pos.x(), _pos.y());
+            _sprite = bn::sprite_items::queenie.create_sprite(_pos.x(), _pos.y());
         }
         _sprite.value().set_visible(true);
     }
@@ -50,12 +50,13 @@ namespace so {
     }
 }
 
-void Npc::move_npc(int firstX, int firstY) {
+    /*
+    void Npc::move_npc(int firstX, int firstY) {
     npc_sprite.set_position(npc_sprite_x, npc_sprite_y);
     bn::core::update();
-}
-
-    /*bn::point npc_map_position(firstX, firstY);
+    }
+    
+    bn::point npc_map_position(firstX, firstY);
     bn::point new_npc_map_position = npc_map_position;
     npc_sprite_x = (npc_map_position.x()); 
     npc_sprite_y = (npc_map_position.y()); 

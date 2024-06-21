@@ -21,11 +21,14 @@ namespace so {
             //bn::fixed_point _body_position;
         public:
             Player(bn::sprite_ptr sprite); //const bn::sprite_ptr player_sprite
+            void reset();
             void move_player(); //bf has this in private
             void hide();
             [[nodiscard]] bn::fixed_point pos();
     };
 }
+
+#endif
 
             /* inline bn::fixed top() const { return this->_body_position.y(); }
             inline bn::fixed left() const { return this->_body_position.x(); }
@@ -40,7 +43,6 @@ namespace so {
 
 // void create_player(int x, int y);
 
-#endif
 
 /* inline float right() const { return this->x + 32; }
     inline float bottom() const { return this->y + 32; }

@@ -1,9 +1,15 @@
-#ifndef SCENE_H
-#define SCENE_H
+#ifndef SO_SCENE_H
+#define SO_SCENE_H
 
 #include "bn_optional.h"
 
-enum class scene_type;
+class Butano
+{       
+    public:
+        Scene execute();
+};
+
+/*enum class scene_type;
 
 class scene
 {
@@ -15,6 +21,6 @@ public:
 
 protected:
     scene() = default;
-};
+};*/
 
 #endif
