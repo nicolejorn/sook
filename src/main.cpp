@@ -37,6 +37,7 @@
 #include "so_scene_title.h"
 #include "so_scene_butano.h"
 #include "so_scene_game.h"
+#include "so_scene_quest.h"
 
 /*#include "bn_sprites_mosaic.h"
 #include "bn_sprite_actions.h"
@@ -185,6 +186,11 @@ int main()
         {
             so::Title title = so::Title();
             scene = title.execute();
+        }
+        else if(scene == so::Scene::QUEST)
+        {
+            so::Quest quest = so::Quest(player);
+            scene = quest.excecute();
         }
         //player.delete_data();
         //player.hide();

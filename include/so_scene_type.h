@@ -7,7 +7,8 @@ namespace so {
     enum class Scene
     {
         TITLE,
-        GAME
+        GAME,
+        QUEST
     };
 }
 

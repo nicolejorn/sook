@@ -58,10 +58,29 @@ so_scene_title.o: \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vblank_callback_type.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_bg_palettes.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_ptr.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_string_view.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vector.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vector_fwd.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_log.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_config_log.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_log_backend.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_optional.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_ptr.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_title.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_butano.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_type.h \
- C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_type.h
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_type.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_text_generator.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vector.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_font.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_utf8_characters_map_ref.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_power_of_two.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_utf8_character.h \
+ C:/Users/sadie/programming/butano-17.5.0/common/include/common_variable_8x8_sprite_font.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_font.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_utf8_characters_map.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_common_variable_8x8_font.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_item.h
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_string.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sstream.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_fwd.h:
@@ -120,7 +139,26 @@ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_core.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vblank_callback_type.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_bg_palettes.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_ptr.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_string_view.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vector.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vector_fwd.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_log.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_config_log.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_log_backend.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_optional.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_ptr.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_title.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_butano.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_type.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_type.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_text_generator.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vector.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_font.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_utf8_characters_map_ref.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_power_of_two.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_utf8_character.h:
+C:/Users/sadie/programming/butano-17.5.0/common/include/common_variable_8x8_sprite_font.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_font.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_utf8_characters_map.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_common_variable_8x8_font.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_item.h:

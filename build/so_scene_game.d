@@ -64,6 +64,9 @@ so_scene_game.o: \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_affine_bg_map_ptr.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_affine_bg_map_cell.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_optional.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_display.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_size.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/hw/include/bn_hw_display_constants.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_player.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_type.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc.h \
@@ -146,6 +149,9 @@ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_ptr.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_affine_bg_map_ptr.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_affine_bg_map_cell.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_optional.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_display.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_size.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/hw/include/bn_hw_display_constants.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_player.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_type.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc.h:

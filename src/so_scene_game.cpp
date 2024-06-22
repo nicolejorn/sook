@@ -13,6 +13,7 @@
 #include "bn_optional.h"
 #include "bn_span.h"
 #include "bn_affine_bg_map_cell.h"
+#include "bn_display.h"
 
 #include "so_player.h"
 #include "so_scene_type.h"
@@ -37,5 +38,26 @@ namespace so
             "And there's scarcely enough.", 
             "For forty cakes."
         };
+        constexpr bn::fixed text_y_inc = 14;
+        constexpr bn::fixed text_y_limit = (bn::display::height() / 2) - text_y_inc;
+        while(true) {
+            text_generator.set_center_alignment();
+            bn::vector<bn::sprite_ptr, 32> text_sprites;
+            text_generator.generate(0, text_y_limit, dialogue_text_lines[0], text_sprites);
+            while (!bn::keypad::start_pressed())
+            {
+                bn::core::update();
+            }
+            text_generator.generate(0, text_y_limit, dialogue_text_lines[1], text_sprites);
+            while (!bn::keypad::start_pressed())
+            {
+                bn::core::update();
+            }
+            return Scene::TITLE;
+            /* dialogue_scene(text_generator, dialogue_text_lines[0]); 
+            bn::core::update();
+            dialogue_scene(text_generator, dialogue_text_lines[1]); 
+            bn::core::update(); */
+        }
     }
 }
