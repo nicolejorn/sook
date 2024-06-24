@@ -24,6 +24,7 @@ namespace so {
             void reset();
             void move_player(); //bf has this in private
             void hide();
+            void spawn(bn::fixed_point pos);
             [[nodiscard]] bn::fixed_point pos();
     };
 }

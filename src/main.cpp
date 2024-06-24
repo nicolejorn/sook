@@ -39,7 +39,44 @@
 #include "so_scene_game.h"
 #include "so_scene_quest.h"
 
+int main()
+{
+    bn::core::init();
+    so::Scene scene = so::Scene::TITLE;
+
+    //bn::sprite_text_generator text_generator(common::variable_8x16_sprite_font);
+
+    bn::sprite_ptr player_sprite = bn::sprite_items::truman2.create_sprite(32,32);
+    player_sprite.set_visible(false);
+    so::Player player = so::Player(player_sprite);
+
+    while(true)
+    {
+        //this is where the title screen graphic will go (or it will go inside title_text_scene)
+        if(scene == so::Scene::GAME)
+        {
+            so::Game game = so::Game(player);
+            scene = game.execute(); //bn::fixed_point(555, 384)
+        }
+        else if(scene == so::Scene::TITLE)
+        {
+            so::Title title = so::Title();
+            scene = title.execute();
+        }
+        //player.delete_data();
+        //player.hide();
+        bn::core::update();
+    }
+}
+
 /*#include "bn_sprites_mosaic.h"
+
+else if(scene == so::Scene::QUEST)
+        {
+            so::Quest quest = so::Quest(player);
+            scene = quest.excecute();
+        }
+        
 #include "bn_sprite_actions.h"
 #include "bn_sprites_actions.h"
 #include "bn_sprite_text_generator.h"
@@ -159,44 +196,6 @@
     }
 
 } */
-
-int main()
-{
-    bn::core::init();
-    so::Scene scene = so::Scene::TITLE;
-    //so::Scene scene = so::Scene::TITLE;
-
-    bn::sprite_text_generator text_generator(common::variable_8x16_sprite_font);
-
-    bn::sprite_ptr player_sprite = bn::sprite_items::truman2.create_sprite(32,32);
-    player_sprite.set_visible(false);
-    so::Player player = so::Player(player_sprite);
-
-    //bn::string_view goal_text_lines[] for finding hat, picking pecans, and going to Mr. Haha's house for ingredients
-
-    while(true)
-    {
-        //this is where the title screen graphic will go (or it will go inside title_text_scene)
-        if(scene == so::Scene::GAME)
-        {
-            so::Game game = so::Game(player);
-            scene = game.execute(); //bn::fixed_point(555, 384)
-        }
-        else if(scene == so::Scene::TITLE)
-        {
-            so::Title title = so::Title();
-            scene = title.execute();
-        }
-        else if(scene == so::Scene::QUEST)
-        {
-            so::Quest quest = so::Quest(player);
-            scene = quest.excecute();
-        }
-        //player.delete_data();
-        //player.hide();
-        bn::core::update();
-    }
-}
 
 /*  title_text_scene(text_generator);
 

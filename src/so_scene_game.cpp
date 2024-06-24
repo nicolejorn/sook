@@ -14,6 +14,7 @@
 #include "bn_span.h"
 #include "bn_affine_bg_map_cell.h"
 #include "bn_display.h"
+#include "bn_sprite_font.h"
 
 #include "so_player.h"
 #include "so_scene_type.h"
@@ -21,11 +22,27 @@
 #include "so_npc_type.h"
 #include "bn_sprite_text_generator.h"
 #include "common_variable_8x8_sprite_font.h"
+#include "so_dialogue_scene.cpp"
 
 namespace so
 {
     Game::Game(Player& player)
     : _player(&player){}
+
+/*  constexpr bn::fixed text_y_inc = 14;
+    constexpr bn::fixed text_y_limit = (bn::display::height() / 2) - text_y_inc;
+    bn::sprite_text_generator text_generator(common::variable_8x8_sprite_font);
+
+    void dialogue_scene(bn::sprite_text_generator& text_generator, const bn::string_view& dialogue)
+    {
+        text_generator.set_center_alignment();
+        bn::vector<bn::sprite_ptr, 32> text_sprites;
+        text_generator.generate(0, text_y_limit, dialogue, text_sprites);
+        while (!bn::keypad::start_pressed())
+        {
+            bn::core::update();
+        }
+    } */
 
     Scene Game::execute() //bn::fixed_point spawn_location
     {
@@ -33,31 +50,47 @@ namespace so
         constexpr bn::string_view dialogue_text_lines[] = {
             "Oh my, it's fruitcake weather!",
             "Fetch our buggy. Help me find my hat.",
+            "We've thirty cakes to bake.",
             "We mustn't, Buddy.",
             "If we start, we won't stop.",
             "And there's scarcely enough.", 
             "For forty cakes."
         };
-        constexpr bn::fixed text_y_inc = 14;
-        constexpr bn::fixed text_y_limit = (bn::display::height() / 2) - text_y_inc;
-        while(true) {
-            text_generator.set_center_alignment();
-            bn::vector<bn::sprite_ptr, 32> text_sprites;
-            text_generator.generate(0, text_y_limit, dialogue_text_lines[0], text_sprites);
-            while (!bn::keypad::start_pressed())
-            {
-                bn::core::update();
-            }
-            text_generator.generate(0, text_y_limit, dialogue_text_lines[1], text_sprites);
-            while (!bn::keypad::start_pressed())
-            {
-                bn::core::update();
+        //while(true) {
+            dialogue_scene(text_generator, dialogue_text_lines[0]); 
+            bn::core::update();
+            dialogue_scene(text_generator, dialogue_text_lines[1]); 
+            bn::core::update();
+            dialogue_scene(text_generator, dialogue_text_lines[2]); 
+            bn::core::update();
+            while(_player->pos().x() < 50) {
+                _player->move_player();
             }
             return Scene::TITLE;
             /* dialogue_scene(text_generator, dialogue_text_lines[0]); 
             bn::core::update();
             dialogue_scene(text_generator, dialogue_text_lines[1]); 
             bn::core::update(); */
-        }
+        //}
     }
 }
+
+            /* text_generator.set_center_alignment();
+            bn::vector<bn::sprite_ptr, 32> text_sprites;
+            text_generator.generate(0, text_y_limit, dialogue_text_lines[0], text_sprites); 
+            while (!bn::keypad::start_pressed())
+            {
+                bn::core::update();
+            }
+            bn::core::update();
+            text_generator.generate(0, text_y_limit, dialogue_text_lines[1], text_sprites);
+            while (!bn::keypad::start_pressed())
+            {
+                bn::core::update();
+            }
+            bn::core::update();
+            text_generator.generate(0, text_y_limit, dialogue_text_lines[2], text_sprites);
+            _player->spawn(bn::fixed_point(32, 32));
+            //Player* player = new Player(bn::sprite_items::truman2.create_sprite(32, 32)); //
+            //player.move_player(32, 32); 
+            bn::core::update(); */

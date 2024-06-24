@@ -120,7 +120,8 @@ main.o: C:/Users/sadie/programming/butano-17.5.0/games/sook/src/main.cpp \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_type.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_butano.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_game.h \
- C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_player.h
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_player.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_quest.h
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_core.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_span.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_array.h:
@@ -243,3 +244,4 @@ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_type.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_butano.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_game.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_player.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_quest.h:

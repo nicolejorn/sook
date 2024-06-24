@@ -1,5 +1,5 @@
-#ifndef SO_SCENE_GAME_H
-#define SO_SCENE_GAME_H
+#ifndef SO_SCENE_QUEST_H
+#define SO_SCENE_QUEST_H
 
 #include "so_scene_type.h"
 #include "so_player.h"
@@ -7,12 +7,12 @@
 
 namespace so
 {
-    class Game
+    class Quest
     {       
         private:
             Player* _player;
         public:
-            Game(Player& player);
+            Quest(Player& player);
             Scene execute(); //bn::fixed_point spawn
     };
 }

@@ -35,6 +35,13 @@ namespace so {
        _sprite.set_visible(false);
     }
 
+    void Player::spawn(bn::fixed_point pos){
+        _pos = pos;
+        _sprite.set_visible(true);
+        //_healthbar.set_visible(false);
+        reset();
+    }
+
     void Player::move_player(){
         
     }
