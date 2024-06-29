@@ -24,6 +24,9 @@
 #include "common_variable_8x8_sprite_font.h"
 #include "so_dialogue_scene.cpp"
 
+#include "bn_sound_items.h"
+#include "bn_sound_actions.h"
+
 namespace so
 {
     Game::Game(Player& player)
@@ -57,15 +60,31 @@ namespace so
             "For forty cakes."
         };
         //while(true) {
+            _player->spawn(bn::fixed_point(0, 0)); //bn::fixed_point(32, 32)
             dialogue_scene(text_generator, dialogue_text_lines[0]); 
             bn::core::update();
             dialogue_scene(text_generator, dialogue_text_lines[1]); 
             bn::core::update();
             dialogue_scene(text_generator, dialogue_text_lines[2]); 
             bn::core::update();
+            //_player->spawn(bn::fixed_point(32, 32));
             while(_player->pos().x() < 50) {
                 _player->move_player();
             }
+            bn::bg_palettes::set_transparent_color(bn::color(0, 16, 0));
+            _player->spawn(bn::fixed_point(0, 0));
+            Npc sook = Npc(0, -32, NPC_TYPE::SOOK); //bn::fixed_point(0, 70)
+            Npc queenie = Npc(0, -64, NPC_TYPE::QUEENIE);
+            bn::core::update();
+            while(_player->pos().y() < 50) {
+                _player->move_player();
+            }
+            bn::bg_palettes::set_transparent_color(bn::color(16, 16, 16));
+            //NPC sook = NPC(bn::fixed_point(0, 70), NPC_TYPE::SOOK);
+            _player->spawn(bn::fixed_point(0, 0));
+            //spawn Sook and Queenie
+            //play crunch sound (maybe needs more core::updates to work)
+            bn::sound_items::crunch.play(0.8);
             return Scene::TITLE;
             /* dialogue_scene(text_generator, dialogue_text_lines[0]); 
             bn::core::update();

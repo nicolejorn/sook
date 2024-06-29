@@ -19,6 +19,8 @@
 namespace so {
     Player::Player(bn::sprite_ptr sprite)
     : _sprite(sprite){ 
+        _sprite.put_above();
+        _sprite.set_visible(false);
     }
 
     void Player::reset(){
@@ -43,7 +45,29 @@ namespace so {
     }
 
     void Player::move_player(){
-        
+        if(bn::keypad::left_held())
+        {
+            //move_left();
+            _pos.set_x(_pos.x() - 4);
+        } 
+        if(bn::keypad::right_held())
+        {
+            //_dx += 10;
+            _pos.set_x(_pos.x() + 4);
+        } 
+        if(bn::keypad::up_held())
+        {
+            _pos.set_y(_pos.y() - 4);
+        } 
+        if(bn::keypad::down_held())
+        {
+            _pos.set_y(_pos.y() + 4);
+        } 
+        _sprite.set_x(_pos.x());
+        _sprite.set_y(_pos.y());
+        bn::core::update();
+        //_pos.set_x(_pos.x() + _dx);
+        //_pos.set_y(_pos.y() + _dy);
     }
 }
 
