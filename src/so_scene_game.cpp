@@ -25,6 +25,7 @@
 #include "so_dialogue_scene.cpp"
 
 #include "bn_sound_items.h"
+#include "bn_sound_items_info.h"
 #include "bn_sound_actions.h"
 
 namespace so
@@ -57,7 +58,10 @@ namespace so
             "We mustn't, Buddy.",
             "If we start, we won't stop.",
             "And there's scarcely enough.", 
-            "For forty cakes."
+            "For forty cakes.",
+            "(Neither of us has money,",
+            "But we have a fruitcake fund each year.",
+            "It's in the bead purse under my friend's bed.)"
         };
         //while(true) {
             _player->spawn(bn::fixed_point(0, 0)); //bn::fixed_point(32, 32)
@@ -73,8 +77,8 @@ namespace so
             }
             bn::bg_palettes::set_transparent_color(bn::color(0, 16, 0));
             _player->spawn(bn::fixed_point(0, 0));
-            Npc sook = Npc(0, -32, NPC_TYPE::SOOK); //bn::fixed_point(0, 70)
-            Npc queenie = Npc(0, -64, NPC_TYPE::QUEENIE);
+            Npc sook = Npc(0, -16, NPC_TYPE::SOOK); //bn::fixed_point(0, 70)
+            Npc queenie = Npc(0, -32, NPC_TYPE::QUEENIE);
             bn::core::update();
             while(_player->pos().y() < 50) {
                 _player->move_player();
@@ -82,10 +86,37 @@ namespace so
             bn::bg_palettes::set_transparent_color(bn::color(16, 16, 16));
             //NPC sook = NPC(bn::fixed_point(0, 70), NPC_TYPE::SOOK);
             _player->spawn(bn::fixed_point(0, 0));
+            bn::core::update();
             //spawn Sook and Queenie
             //play crunch sound (maybe needs more core::updates to work)
-            bn::sound_items::crunch.play(0.8);
-            return Scene::TITLE;
+            //bn::sound_items::crunch.play(0.8);
+            while(_player->pos().y() < 50) {
+                _player->move_player();
+            }
+            /* while(!bn::keypad::start_pressed()) {
+                if(bn::keypad::a_pressed()) {
+                    bn::sound_items::crunch.play(0.95);
+                }
+                bn::core::update();
+            } */
+            bn::core::update();
+            //maybe this could be a still image like the FE CGs
+            dialogue_scene(text_generator, dialogue_text_lines[3]);
+            bn::core::update();
+            dialogue_scene(text_generator, dialogue_text_lines[4]);
+            bn::core::update();
+            dialogue_scene(text_generator, dialogue_text_lines[5]);
+            bn::core::update();
+            dialogue_scene(text_generator, dialogue_text_lines[6]);
+            bn::core::update(); 
+            dialogue_scene(text_generator, dialogue_text_lines[7]);
+            bn::core::update();
+            dialogue_scene(text_generator, dialogue_text_lines[8]);
+            bn::core::update();
+            dialogue_scene(text_generator, dialogue_text_lines[9]);
+            bn::core::update(); 
+            //return Scene::NIGHT;
+            return Scene::NIGHT;
             /* dialogue_scene(text_generator, dialogue_text_lines[0]); 
             bn::core::update();
             dialogue_scene(text_generator, dialogue_text_lines[1]); 

@@ -5,7 +5,8 @@
 
 namespace bn::sound_items
 {
-    constexpr inline sound_item crunch(0);
+    constexpr inline sound_item cap(0);
+    constexpr inline sound_item crunch(1);
 }
 
 #endif

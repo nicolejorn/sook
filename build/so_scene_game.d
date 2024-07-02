@@ -111,6 +111,7 @@ so_scene_game.o: \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sound_items.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_item.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_handle.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sound_items_info.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_actions.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_template_actions.h \
@@ -226,6 +227,7 @@ C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_fixed_
 C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sound_items.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_item.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_handle.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sound_items_info.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_actions.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_template_actions.h:

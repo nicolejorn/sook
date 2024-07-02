@@ -38,6 +38,7 @@
 #include "so_scene_butano.h"
 #include "so_scene_game.h"
 #include "so_scene_quest.h"
+#include "so_scene_night.h"
 
 int main()
 {
@@ -62,6 +63,11 @@ int main()
         {
             so::Title title = so::Title();
             scene = title.execute();
+        }
+        else if(scene == so::Scene::NIGHT)
+        {
+            so::Night night = so::Night();
+            scene = night.execute();
         }
         //player.delete_data();
         //player.hide();

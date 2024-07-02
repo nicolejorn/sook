@@ -8,7 +8,9 @@ namespace so {
     {
         TITLE,
         GAME,
-        QUEST
+        QUEST,
+        NIGHT,
+        SHOP
     };
 }
 
