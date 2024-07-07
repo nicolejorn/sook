@@ -33,21 +33,6 @@ namespace so
     Game::Game(Player& player)
     : _player(&player){}
 
-/*  constexpr bn::fixed text_y_inc = 14;
-    constexpr bn::fixed text_y_limit = (bn::display::height() / 2) - text_y_inc;
-    bn::sprite_text_generator text_generator(common::variable_8x8_sprite_font);
-
-    void dialogue_scene(bn::sprite_text_generator& text_generator, const bn::string_view& dialogue)
-    {
-        text_generator.set_center_alignment();
-        bn::vector<bn::sprite_ptr, 32> text_sprites;
-        text_generator.generate(0, text_y_limit, dialogue, text_sprites);
-        while (!bn::keypad::start_pressed())
-        {
-            bn::core::update();
-        }
-    } */
-
     Scene Game::execute() //bn::fixed_point spawn_location
     {
         bn::sprite_text_generator text_generator(common::variable_8x8_sprite_font);
@@ -125,22 +110,3 @@ namespace so
     }
 }
 
-            /* text_generator.set_center_alignment();
-            bn::vector<bn::sprite_ptr, 32> text_sprites;
-            text_generator.generate(0, text_y_limit, dialogue_text_lines[0], text_sprites); 
-            while (!bn::keypad::start_pressed())
-            {
-                bn::core::update();
-            }
-            bn::core::update();
-            text_generator.generate(0, text_y_limit, dialogue_text_lines[1], text_sprites);
-            while (!bn::keypad::start_pressed())
-            {
-                bn::core::update();
-            }
-            bn::core::update();
-            text_generator.generate(0, text_y_limit, dialogue_text_lines[2], text_sprites);
-            _player->spawn(bn::fixed_point(32, 32));
-            //Player* player = new Player(bn::sprite_items::truman2.create_sprite(32, 32)); //
-            //player.move_player(32, 32); 
-            bn::core::update(); */

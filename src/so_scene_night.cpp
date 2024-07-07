@@ -44,6 +44,9 @@ namespace so
         dialogue_scene(text_generator, "(We toss a penny out the window.)");
         bn::core::update();
         //return Scene::SHOP
+        //could have scrolling map on the way to Haha's house
+        //"Liking Christmas is only for children? Screw that."
+        //Or giving advice that adults should still like Christmas no matter what
         return Scene::TITLE;
     }
 }
