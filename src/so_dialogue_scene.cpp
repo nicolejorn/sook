@@ -1,3 +1,5 @@
+#include "so_dialogue_scene.h"
+
 #include "bn_core.h"
 #include "bn_math.h"
 #include "bn_keypad.h"
@@ -18,7 +20,7 @@
 #include "fixed_32x64_sprite_font.h"
 #include "bn_sprite_text_generator.h"
 
-namespace { //so 
+//namespace { //so 
     void dialogue_scene(bn::sprite_text_generator& text_generator, const bn::string_view& dialogue)
     {
         constexpr bn::fixed text_y_inc = 14;
@@ -36,4 +38,4 @@ namespace { //so
             bn::core::update();
         }
     }
-}
+//}

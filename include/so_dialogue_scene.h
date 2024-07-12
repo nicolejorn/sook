@@ -1,0 +1,21 @@
+#include "bn_core.h"
+#include "bn_math.h"
+#include "bn_keypad.h"
+#include "bn_display.h"
+#include "bn_blending.h"
+#include "bn_sprite_ptr.h"
+#include "bn_sprite_builder.h"
+#include "bn_string.h"
+#include "bn_memory.h"
+#include "bn_bg_palettes.h"
+#include "bn_regular_bg_ptr.h"
+#include "bn_fixed_point.h"
+
+#include "common_fixed_8x8_sprite_font.h"
+#include "common_fixed_8x16_sprite_font.h"
+#include "common_variable_8x8_sprite_font.h"
+#include "common_variable_8x16_sprite_font.h"
+#include "fixed_32x64_sprite_font.h"
+#include "bn_sprite_text_generator.h"
+
+void dialogue_scene(bn::sprite_text_generator& text_generator, const bn::string_view& dialogue);

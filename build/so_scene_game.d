@@ -85,7 +85,7 @@ so_scene_game.o: \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_string_view.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc_type.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc_type.h \
- C:/Users/sadie/programming/butano-17.5.0/games/sook/src/so_dialogue_scene.cpp \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_dialogue_scene.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_math.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sin_lut.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_reciprocal_lut.h \
@@ -201,7 +201,7 @@ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_limits.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_string_view.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc_type.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc_type.h:
-C:/Users/sadie/programming/butano-17.5.0/games/sook/src/so_dialogue_scene.cpp:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_dialogue_scene.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_math.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sin_lut.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_reciprocal_lut.h:

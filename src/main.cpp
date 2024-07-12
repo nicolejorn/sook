@@ -39,6 +39,8 @@
 #include "so_scene_game.h"
 #include "so_scene_quest.h"
 #include "so_scene_night.h"
+#include "so_scene_shop.h"
+#include "so_scene_nextday.h"
 
 int main()
 {
@@ -49,7 +51,7 @@ int main()
 
     bn::sprite_ptr player_sprite = bn::sprite_items::truman2.create_sprite(32,32);
     player_sprite.set_visible(false);
-    so::Player player = so::Player(player_sprite);
+    so::Player player = so::Player(player_sprite); //might put invidual players in each scene
 
     while(true)
     {
@@ -71,8 +73,13 @@ int main()
         }
         else if (scene == so::Scene::SHOP)
         {
-            so::Shop shop = so::Shop();
+            so::Shop shop = so::Shop(player);
             scene = shop.execute();
+        }
+        else if (scene == so::Scene::NEXTDAY)
+        {
+            so::Nextday nextday = so::Nextday(player);
+            scene = nextday.execute();
         }
         //player.delete_data();
         //player.hide();

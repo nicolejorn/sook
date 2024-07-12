@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\sadie\\programming\\butano-17.5.0\\games\\sook\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sadie\\programming\\butano-17.5.0\\games\\sook\\src\\so_scene_nextday.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\so_scene_nextday.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sadie\\programming\\butano-17.5.0\\games\\sook\\src\\so_scene_game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\so_scene_game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -27,19 +31,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "so_scene_nextday.cpp",
+              "DocumentMoniker": "C:\\Users\\sadie\\programming\\butano-17.5.0\\games\\sook\\src\\so_scene_nextday.cpp",
+              "RelativeDocumentMoniker": "src\\so_scene_nextday.cpp",
+              "ToolTip": "C:\\Users\\sadie\\programming\\butano-17.5.0\\games\\sook\\src\\so_scene_nextday.cpp",
+              "RelativeToolTip": "src\\so_scene_nextday.cpp",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAIwB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-11T13:50:53.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "so_scene_game.cpp",
               "DocumentMoniker": "C:\\Users\\sadie\\programming\\butano-17.5.0\\games\\sook\\src\\so_scene_game.cpp",
               "RelativeDocumentMoniker": "src\\so_scene_game.cpp",
               "ToolTip": "C:\\Users\\sadie\\programming\\butano-17.5.0\\games\\sook\\src\\so_scene_game.cpp",
               "RelativeToolTip": "src\\so_scene_game.cpp",
-              "ViewState": "AQIAABYAAAAAAAAAAAAIwCAAAAAeAAAA",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAIwHAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-07-07T18:41:05.981Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "so_scene_shop.cpp",
               "DocumentMoniker": "C:\\Users\\sadie\\programming\\butano-17.5.0\\games\\sook\\src\\so_scene_shop.cpp",
               "RelativeDocumentMoniker": "src\\so_scene_shop.cpp",
@@ -51,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\sadie\\programming\\butano-17.5.0\\games\\sook\\src\\main.cpp",
               "RelativeDocumentMoniker": "src\\main.cpp",

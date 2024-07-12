@@ -79,7 +79,7 @@ so_scene_night.o: \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_item.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_tiles_item.h \
- C:/Users/sadie/programming/butano-17.5.0/games/sook/src/so_dialogue_scene.cpp \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_dialogue_scene.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_math.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sin_lut.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_reciprocal_lut.h \
@@ -182,7 +182,7 @@ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_bg_palette_item.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_item.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_tiles_item.h:
-C:/Users/sadie/programming/butano-17.5.0/games/sook/src/so_dialogue_scene.cpp:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_dialogue_scene.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_math.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sin_lut.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_reciprocal_lut.h:

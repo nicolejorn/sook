@@ -10,7 +10,8 @@ namespace so {
         GAME,
         QUEST,
         NIGHT,
-        SHOP
+        SHOP,
+        NEXTDAY
     };
 }
 

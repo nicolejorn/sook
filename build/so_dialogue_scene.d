@@ -1,5 +1,6 @@
 so_dialogue_scene.o: \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/src/so_dialogue_scene.cpp \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_dialogue_scene.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_core.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_span.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_array.h \
@@ -81,7 +82,9 @@ so_dialogue_scene.o: \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_text_generator.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vector.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vector_fwd.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_font.h
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_font.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/fixed_32x64_sprite_font.h
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_dialogue_scene.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_core.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_span.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_array.h:
@@ -164,3 +167,4 @@ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_text_generator
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vector.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_vector_fwd.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_font.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/fixed_32x64_sprite_font.h:

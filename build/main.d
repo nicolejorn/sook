@@ -124,7 +124,26 @@ main.o: C:/Users/sadie/programming/butano-17.5.0/games/sook/src/main.cpp \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_quest.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_night.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_camera_ptr.h \
- C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_optional.h
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_optional.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_shop.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_rect_window.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_rect.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_rect.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_size.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_size_fwd.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_rect_fwd.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_inside_window.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_window.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_top_left_fixed_rect.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_top_left_rect.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_top_left_fixed_rect_fwd.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_camera_actions.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_random.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc_type.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_dialogue_scene.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/fixed_32x64_sprite_font.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_nextday.h
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_core.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_span.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_array.h:
@@ -251,3 +270,22 @@ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_quest.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_night.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_camera_ptr.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_optional.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_shop.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_rect_window.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_rect.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_rect.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_size.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_size_fwd.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_rect_fwd.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_inside_window.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_window.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_top_left_fixed_rect.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_top_left_rect.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_top_left_fixed_rect_fwd.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_camera_actions.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_random.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc_type.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_dialogue_scene.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/fixed_32x64_sprite_font.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_nextday.h:

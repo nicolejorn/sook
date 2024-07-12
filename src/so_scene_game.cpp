@@ -22,7 +22,7 @@
 #include "so_npc_type.h"
 #include "bn_sprite_text_generator.h"
 #include "common_variable_8x8_sprite_font.h"
-#include "so_dialogue_scene.cpp"
+#include "so_dialogue_scene.h"
 
 #include "bn_sound_items.h"
 #include "bn_sound_items_info.h"

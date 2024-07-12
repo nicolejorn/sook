@@ -20,7 +20,8 @@
 #include "bn_sprite_text_generator.h"
 #include "common_variable_8x8_sprite_font.h"
 #include "bn_regular_bg_items_sook_room.h"
-#include "so_dialogue_scene.cpp"
+#include "so_dialogue_scene.h"
+//#include "so_dialogue_scene.cpp"
 
 namespace so
 {
@@ -35,7 +36,9 @@ namespace so
         bn::regular_bg_ptr bedroom_bg = bn::regular_bg_items::sook_room.create_bg(0, 0);
         dialogue_scene(text_generator, "(Later that night...");
         bn::core::update();
-        dialogue_scene(text_generator, "According to her calculations, we have $12.73.");
+        dialogue_scene(text_generator, "According to her calculations,");
+        bn::core::update();
+        dialogue_scene(text_generator, "We have $12.73.");
         bn::core::update();
         dialogue_scene(text_generator, "According to mine, exactly $13.)");
         bn::core::update();
@@ -47,6 +50,6 @@ namespace so
         //could have scrolling map on the way to Haha's house
         //"Liking Christmas is only for children? Screw that."
         //Or giving advice that adults should still like Christmas no matter what
-        return Scene::TITLE;
+        return Scene::SHOP;
     }
 }
