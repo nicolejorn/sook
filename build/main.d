@@ -143,7 +143,10 @@ main.o: C:/Users/sadie/programming/butano-17.5.0/games/sook/src/main.cpp \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc_type.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_dialogue_scene.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/fixed_32x64_sprite_font.h \
- C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_nextday.h
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_nextday.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_eve.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_kites.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_ending.h
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_core.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_span.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_array.h:
@@ -289,3 +292,6 @@ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc_type.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_dialogue_scene.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/fixed_32x64_sprite_font.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_nextday.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_eve.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_kites.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_ending.h:

@@ -17,6 +17,7 @@
 #include "bn_camera_actions.h"
 
 #include "bn_regular_bg_items_land2.h"
+#include "bn_regular_bg_items_trees.h"
 #include "so_player.h"
 #include "so_scene_type.h"
 #include "so_npc.h"
@@ -30,6 +31,7 @@ namespace so
 
     Scene Nextday::execute() //bn::fixed_point spawn_location
     {
+        //might change land2 to be top-down
         bn::regular_bg_ptr land2_bg = bn::regular_bg_items::land2.create_bg(0, 0); //might add trees to this background
         _player->spawn(bn::fixed_point(-112, 8));
         Npc sook = Npc(-80, 8, NPC_TYPE::SOOK); //bn::fixed_point(0, 70)
@@ -40,11 +42,16 @@ namespace so
         bn::core::update();
         dialogue_scene(text_generator, "Can you smell it?");
         bn::core::update();
-        while(_player->pos().x() < 50) {
+        while(_player->pos().x() < 70) {
             _player->move_player();
         }
+        bn::regular_bg_ptr trees_bg = bn::regular_bg_items::trees.create_bg(0, 0);
+        bn::core::update();
+        dialogue_scene(text_generator, "It should be twice as tall as a boy.");
+        bn::core::update();
+        dialogue_scene(text_generator, "So a boy can't steal the star.");
         bn::core::update();
         //change background to show the trees
-        return Scene::TITLE;
+        return Scene::EVE;
     }
 }

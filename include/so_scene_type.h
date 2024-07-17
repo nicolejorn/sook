@@ -11,7 +11,10 @@ namespace so {
         QUEST,
         NIGHT,
         SHOP,
-        NEXTDAY
+        NEXTDAY,
+        EVE,
+        KITES,
+        ENDING
     };
 }
 

@@ -41,6 +41,9 @@
 #include "so_scene_night.h"
 #include "so_scene_shop.h"
 #include "so_scene_nextday.h"
+#include "so_scene_eve.h"
+#include "so_scene_kites.h"
+#include "so_scene_ending.h"
 
 int main()
 {
@@ -80,6 +83,21 @@ int main()
         {
             so::Nextday nextday = so::Nextday(player);
             scene = nextday.execute();
+        }
+        else if (scene == so::Scene::EVE)
+        {
+            so::Eve eve = so::Eve(player);
+            scene = eve.execute();
+        }
+        else if (scene == so::Scene::KITES)
+        {
+            so::Kites kites = so::Kites(player);
+            scene = kites.execute();
+        }
+        else if (scene == so::Scene::ENDING)
+        {
+            so::Ending ending = so::Ending();
+            scene = ending.execute();
         }
         //player.delete_data();
         //player.hide();

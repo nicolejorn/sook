@@ -122,6 +122,7 @@ so_scene_nextday.o: \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_item.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_tiles_item.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_regular_bg_items_trees.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_player.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_type.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc.h \
@@ -249,6 +250,7 @@ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_bg_palette_item.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_item.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_tiles_item.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_regular_bg_items_trees.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_player.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_type.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc.h:
