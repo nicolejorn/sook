@@ -1,5 +1,5 @@
-#ifndef BF_ENEMY_TYPE_H
-#define BF_ENEMY_TYPE_H
+#ifndef BF_NPC_TYPE_H
+#define BF_NPC_TYPE_H
 
 namespace so
 {

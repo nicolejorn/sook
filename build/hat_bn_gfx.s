@@ -1,0 +1,39 @@
+
+@{{BLOCK(hat_bn_gfx)
+
+@=======================================================================
+@
+@	hat_bn_gfx, 32x16@4, 
+@	+ palette 16 entries, not compressed
+@	+ 8 tiles not compressed
+@	Total size: 32 + 256 = 288
+@
+@	Time-stamp: 2024-07-31, 11:47:35
+@	Exported by Cearn's GBA Image Transmogrifier, v0.9.2
+@	( http://www.coranac.com/projects/#grit )
+@
+@=======================================================================
+
+	.section .rodata
+	.align	2
+	.global hat_bn_gfxTiles		@ 256 unsigned chars
+	.hidden hat_bn_gfxTiles
+hat_bn_gfxTiles:
+	.word 0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000
+	.word 0x33333333,0x33333333,0x33333333,0x33333333,0x33333333,0x33333333,0x33333333,0x88888888
+	.word 0x33333333,0x33333333,0x33333333,0x33333333,0x33333333,0x33333333,0x33333333,0x88888888
+	.word 0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000
+	.word 0xD0000000,0xD0000000,0xD0000000,0xD0000000,0xD0000000,0xD0000000,0xD0000000,0xD3333333
+	.word 0x33333333,0x33333333,0x33333333,0x33333333,0x33333333,0x33333333,0x33333333,0x33333333
+	.word 0x33333333,0x33333333,0x33333333,0x33333333,0x33333333,0x33333333,0x33333333,0x33333333
+	.word 0x0000000D,0x0000000D,0x0000000D,0x0000000D,0x0000000D,0x0000000D,0x0000000D,0x3333333D
+
+	.section .rodata
+	.align	2
+	.global hat_bn_gfxPal		@ 32 unsigned chars
+	.hidden hat_bn_gfxPal
+hat_bn_gfxPal:
+	.hword 0x0000,0x0010,0x0200,0x32DC,0x4000,0x4010,0x4200,0x6318
+	.hword 0x4210,0x001F,0x03E0,0x03FF,0x7C00,0x7C1F,0x7FE0,0x7FFF
+
+@}}BLOCK(hat_bn_gfx)

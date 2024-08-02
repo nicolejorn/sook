@@ -23,7 +23,7 @@ namespace so {
     Scene Ending::execute() {
         bn::bg_palettes::set_transparent_color(bn::color(0, 0, 0));
         bn::sprite_text_generator text_generator(common::variable_8x8_sprite_font);
-        dialogue_scene(text_generator, "That was our last Christmas together.");
+        dialogue_scene(text_generator, "(That was our last Christmas together.");
         bn::core::update();
         dialogue_scene(text_generator, "Those who Know Best decide that");
         bn::core::update();
@@ -37,7 +37,7 @@ namespace so {
         bn::core::update();
         dialogue_scene(text_generator, "She cannot rouse herself to exclaim:");
         bn::core::update();
-        dialogue_scene(text_generator, "Oh my, it's fruitcake weather!");
+        dialogue_scene(text_generator, "Oh my, it's fruitcake weather!)");
         bn::core::update();
         return Scene::TITLE;
     }

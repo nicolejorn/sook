@@ -23,6 +23,7 @@
 #include "bn_sprite_text_generator.h"
 #include "common_variable_8x8_sprite_font.h"
 #include "so_dialogue_scene.h"
+#include "so_item.h"
 
 #include "bn_sound_items.h"
 #include "bn_sound_items_info.h"
@@ -56,6 +57,7 @@ namespace so
             bn::core::update();
             dialogue_scene(text_generator, dialogue_text_lines[2]); 
             bn::core::update();
+            Item hat = Item(50, 0, ITEM_TYPE::HAT);
             //_player->spawn(bn::fixed_point(32, 32));
             while(_player->pos().x() < 50) {
                 _player->move_player();
@@ -73,18 +75,16 @@ namespace so
             _player->spawn(bn::fixed_point(0, 0));
             bn::core::update();
             //spawn Sook and Queenie
-            //play crunch sound (maybe needs more core::updates to work)
-            //bn::sound_items::crunch.play(0.8);
             while(_player->pos().y() < 50) {
                 _player->move_player();
             }
+            bn::sound_items::crunch.play(0.95);
             /* while(!bn::keypad::start_pressed()) {
                 if(bn::keypad::a_pressed()) {
                     bn::sound_items::crunch.play(0.95);
                 }
                 bn::core::update();
             } */
-            bn::core::update();
             //maybe this could be a still image like the FE CGs
             dialogue_scene(text_generator, dialogue_text_lines[3]);
             bn::core::update();
