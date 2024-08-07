@@ -33,6 +33,7 @@ namespace so
     {
         bn::bg_palettes::set_transparent_color(bn::color(16, 16, 16));
         bn::sprite_text_generator text_generator(common::variable_8x8_sprite_font);
+        Npc sook = Npc(20, 8, NPC_TYPE::SOOK);
         bn::core::update();
         dialogue_scene(text_generator, "Your hand used to be so much smaller.");
         bn::core::update();

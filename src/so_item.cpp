@@ -14,6 +14,7 @@
 #include "so_item_type.h"
 
 #include "bn_sprite_items_hat.h"
+#include "bn_sprite_items_pecan.h"
 
 namespace so {
     Item::Item(int x, int y, ITEM_TYPE type)
@@ -21,6 +22,10 @@ namespace so {
         if(_type == ITEM_TYPE::HAT)
         {
             _sprite = bn::sprite_items::hat.create_sprite(_pos.x(), _pos.y());
+        }
+        else if(_type == ITEM_TYPE::PECAN)
+        {
+            _sprite = bn::sprite_items::pecan.create_sprite(_pos.x(), _pos.y());
         }
         _sprite.value().set_visible(true);
     }

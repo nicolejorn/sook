@@ -110,6 +110,12 @@ so_scene_game.o: \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_fixed_32x64_font.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_item.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_item_type.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_regular_bg_items_land.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_item.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_bg_palette_item.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_item.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_tiles_item.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sound_items.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_item.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_handle.h \
@@ -228,6 +234,12 @@ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/fixed_32x64_sprite_f
 C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_fixed_32x64_font.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_item.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_item_type.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_regular_bg_items_land.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_item.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_bg_palette_item.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_item.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_tiles_item.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sound_items.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_item.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_handle.h:

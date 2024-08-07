@@ -25,6 +25,7 @@
 #include "so_dialogue_scene.h"
 #include "so_item.h"
 
+#include "bn_regular_bg_items_land.h"
 #include "bn_sound_items.h"
 #include "bn_sound_items_info.h"
 #include "bn_sound_actions.h"
@@ -62,14 +63,18 @@ namespace so
             while(_player->pos().x() < 50) {
                 _player->move_player();
             }
+            hat.set_visible(false);
             bn::bg_palettes::set_transparent_color(bn::color(0, 16, 0));
+            //bn::regular_bg_ptr land_bg = bn::regular_bg_items::land.create_bg(0, 0);
             _player->spawn(bn::fixed_point(0, 0));
             Npc sook = Npc(0, -16, NPC_TYPE::SOOK); //bn::fixed_point(0, 70)
             Npc queenie = Npc(0, -32, NPC_TYPE::QUEENIE);
+            Item pecan = Item(0, 50, ITEM_TYPE::PECAN);
             bn::core::update();
             while(_player->pos().y() < 50) {
                 _player->move_player();
             }
+            pecan.set_visible(false);
             bn::bg_palettes::set_transparent_color(bn::color(16, 16, 16));
             //NPC sook = NPC(bn::fixed_point(0, 70), NPC_TYPE::SOOK);
             _player->spawn(bn::fixed_point(0, 0));
