@@ -33,9 +33,11 @@ namespace so
     {
         //might change land2 to be top-down
         bn::regular_bg_ptr land2_bg = bn::regular_bg_items::land2.create_bg(0, 0); //might add trees to this background
-        _player->spawn(bn::fixed_point(-112, 8));
-        Npc sook = Npc(-80, 8, NPC_TYPE::SOOK); //bn::fixed_point(0, 70)
+        _player->spawn(bn::fixed_point(-112, 9));
+        bn::core::update();
+        Npc sook = Npc(-80, 9, NPC_TYPE::SOOK); //bn::fixed_point(0, 70)
         Npc queenie = Npc(-48, 16, NPC_TYPE::QUEENIE);
+        bn::core::update();
         //maybe have queenie "paddle over"
         bn::sprite_text_generator text_generator(common::variable_8x8_sprite_font);
         dialogue_scene(text_generator, "We're almost there;");
@@ -43,7 +45,8 @@ namespace so
         dialogue_scene(text_generator, "Can you smell it?");
         bn::core::update();
         while(_player->pos().x() < 70) {
-            _player->move_player();
+            //_player->move_player();
+            _player->move_player(false);
         }
         bn::regular_bg_ptr trees_bg = bn::regular_bg_items::trees.create_bg(0, 0);
         bn::core::update();

@@ -61,18 +61,18 @@ namespace so
             Item hat = Item(50, 0, ITEM_TYPE::HAT);
             //_player->spawn(bn::fixed_point(32, 32));
             while(_player->pos().x() < 50) {
-                _player->move_player();
+                _player->move_player(true);
             }
             hat.set_visible(false);
             bn::bg_palettes::set_transparent_color(bn::color(0, 16, 0));
             //bn::regular_bg_ptr land_bg = bn::regular_bg_items::land.create_bg(0, 0);
             _player->spawn(bn::fixed_point(0, 0));
-            Npc sook = Npc(0, -16, NPC_TYPE::SOOK); //bn::fixed_point(0, 70)
             Npc queenie = Npc(0, -32, NPC_TYPE::QUEENIE);
-            Item pecan = Item(0, 50, ITEM_TYPE::PECAN);
+            Npc sook = Npc(0, -16, NPC_TYPE::SOOK); //bn::fixed_point(0, 70)
+            Item pecan = Item(100, 50, ITEM_TYPE::PECAN);
             bn::core::update();
-            while(_player->pos().y() < 50) {
-                _player->move_player();
+            while(!((_player->pos().y() > 50) && (_player->pos().x() > 80))) {
+                _player->move_player(true);
             }
             pecan.set_visible(false);
             bn::bg_palettes::set_transparent_color(bn::color(16, 16, 16));
@@ -81,8 +81,10 @@ namespace so
             bn::core::update();
             //spawn Sook and Queenie
             while(_player->pos().y() < 50) {
-                _player->move_player();
+                _player->move_player(true);
             }
+            queenie.set_pos(bn::fixed_point(50, 50));
+            bn::core::update();
             bn::sound_items::crunch.play(0.95);
             /* while(!bn::keypad::start_pressed()) {
                 if(bn::keypad::a_pressed()) {

@@ -43,6 +43,8 @@ namespace so {
 
     void Npc::set_pos(bn::fixed_point pos){
         _pos = pos;
+        //_sprite.set_x(_pos.x());
+        //_sprite.set_y(_pos.y());
     }
 
     NPC_TYPE Npc::type(){

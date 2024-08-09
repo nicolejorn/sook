@@ -44,7 +44,7 @@ namespace so {
         reset();
     }
 
-    void Player::move_player(){
+    void Player::move_player(bool isTopDown){
         if(bn::keypad::left_held())
         {
             //move_left();
@@ -54,15 +54,17 @@ namespace so {
         {
             //_dx += 10;
             _pos.set_x(_pos.x() + 4);
-        } 
-        if(bn::keypad::up_held())
-        {
-            _pos.set_y(_pos.y() - 4);
-        } 
-        if(bn::keypad::down_held())
-        {
-            _pos.set_y(_pos.y() + 4);
-        } 
+        }
+        if (isTopDown) {
+            if(bn::keypad::up_held())
+            {
+                _pos.set_y(_pos.y() - 4);
+            } 
+            if(bn::keypad::down_held())
+            {
+                _pos.set_y(_pos.y() + 4);
+            } 
+        }
         _sprite.set_x(_pos.x());
         _sprite.set_y(_pos.y());
         bn::core::update();

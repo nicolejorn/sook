@@ -31,6 +31,7 @@ namespace so
 
     Scene Kites::execute() //bn::fixed_point spawn_location
     {
+        bn::bg_palettes::set_transparent_color(bn::color(0, 16, 16));
         bn::sprite_text_generator text_generator(common::variable_8x8_sprite_font);
         dialogue_scene(text_generator, "Buddy, the wind is blowing.");
         bn::core::update();

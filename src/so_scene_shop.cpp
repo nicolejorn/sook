@@ -46,6 +46,12 @@ namespace so
         bn::sprite_text_generator text_generator(common::variable_8x8_sprite_font);
         dialogue_scene(text_generator, "Anyone to home?");
         bn::core::update();
+        dialogue_scene(text_generator, "What do you want with Haha?");
+        bn::core::update();
+        dialogue_scene(text_generator, "Tell you what.");
+        bn::core::update();
+        dialogue_scene(text_generator, "Send me one of the fruitcakes instead.");
+        bn::core::update();
         //Haha's sprite and more dialogue here
         //Next scene is stove OR the next day
         return Scene::NEXTDAY;
