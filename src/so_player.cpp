@@ -68,8 +68,38 @@ namespace so {
         _sprite.set_x(_pos.x());
         _sprite.set_y(_pos.y());
         bn::core::update();
-        //_pos.set_x(_pos.x() + _dx);
-        //_pos.set_y(_pos.y() + _dy);
+    }
+
+    void Player::move_player(bool isTopDown, bn::sprite_ptr sprite1, bn::sprite_ptr sprite2){
+        if(bn::keypad::left_held())
+        {
+            _pos.set_x(_pos.x() - 4);
+            //sprite1.value().set_x(_pos.x() - 24);
+            //sprite2.value().set_x(_pos.x() - 44);
+        } 
+        if(bn::keypad::right_held())
+        {
+            _pos.set_x(_pos.x() + 4);
+            //sprite1.value().set_x(_pos.x() + 24);
+            //sprite2.value().set_x(_pos.x() + 44);
+        }
+        if (isTopDown) {
+            if(bn::keypad::up_held())
+            {
+                _pos.set_y(_pos.y() - 4);
+                //sprite1.value().set_y(_pos);
+                //sprite2.value().set_y(_pos);
+            } 
+            if(bn::keypad::down_held())
+            {
+                _pos.set_y(_pos.y() + 4);
+                //sprite1.value().set_y(_pos);
+                //sprite2.value().set_y(_pos);
+            } 
+        }
+        _sprite.set_x(_pos.x());
+        _sprite.set_y(_pos.y());
+        bn::core::update();
     }
 }
 

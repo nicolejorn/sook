@@ -23,6 +23,7 @@ namespace so {
             Player(bn::sprite_ptr sprite); //const bn::sprite_ptr player_sprite
             void reset();
             void move_player(bool isTopDown); //bf has this in private
+            void move_player(bool isTopDown, bn::sprite_ptr sprite1, bn::sprite_ptr sprite2);
             void hide();
             void spawn(bn::fixed_point pos);
             [[nodiscard]] bn::fixed_point pos();

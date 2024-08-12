@@ -20,9 +20,6 @@ namespace so {
     class Npc {
     private:
         bn::fixed_point _pos;
-        bn::fixed _dy = 0;
-        bn::fixed _dx = 0;
-        //bn::camera_ptr _camera;
         NPC_TYPE _type;    
         bn::optional<bn::sprite_ptr> _sprite;   
     public:   

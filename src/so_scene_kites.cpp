@@ -16,6 +16,7 @@
 #include "bn_rect_window.h"
 #include "bn_camera_actions.h"
 
+#include "bn_regular_bg_items_pasture.h"
 #include "so_player.h"
 #include "so_scene_type.h"
 #include "so_npc.h"
@@ -23,6 +24,7 @@
 #include "so_dialogue_scene.h"
 #include "common_variable_8x8_sprite_font.h"
 #include "bn_sprite_text_generator.h"
+#include "so_item.h"
 
 namespace so
 {
@@ -31,10 +33,14 @@ namespace so
 
     Scene Kites::execute() //bn::fixed_point spawn_location
     {
-        bn::bg_palettes::set_transparent_color(bn::color(0, 16, 16));
+        //bn::bg_palettes::set_transparent_color(bn::color(0, 16, 16));
+        bn::regular_bg_ptr pasture_bg = bn::regular_bg_items::pasture.create_bg(0, 0);
         bn::sprite_text_generator text_generator(common::variable_8x8_sprite_font);
+        Item kite = Item(50, 0, ITEM_TYPE::KITE);
+        bn::core::update();
         dialogue_scene(text_generator, "Buddy, the wind is blowing.");
         bn::core::update();
+        kite.set_visible(false);
         return Scene::ENDING;
     }
 }

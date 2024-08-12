@@ -62,7 +62,7 @@ int main()
         if(scene == so::Scene::GAME)
         {
             so::Game game = so::Game(player);
-            scene = game.execute(); //bn::fixed_point(555, 384)
+            scene = game.execute();
         }
         else if(scene == so::Scene::TITLE)
         {

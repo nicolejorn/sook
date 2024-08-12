@@ -6,7 +6,8 @@ namespace so
     enum class ITEM_TYPE
     {
         HAT,
-        PECAN
+        PECAN,
+        KITE
     };
 }
 

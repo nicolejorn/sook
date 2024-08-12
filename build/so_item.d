@@ -79,7 +79,8 @@ so_item.o: \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_shape_size.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_palette_item.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_color.h \
- C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_pecan.h
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_pecan.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_buddy_kite.h
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_core.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_span.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_array.h:
@@ -160,3 +161,4 @@ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_shape_size.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sprite_palette_item.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_color.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_pecan.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sprite_items_buddy_kite.h:

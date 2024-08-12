@@ -40,9 +40,12 @@ namespace so
 
         bn::camera_ptr camera = bn::camera_ptr::create(0, 0);
         haha_house_bg.set_camera(camera);
-        while(camera.x() < 200) {
-            camera.set_x(camera.x() + 1);
+        while(camera.x() < 100) {
+            camera.set_x(camera.x() + 2);
+            bn::core::update();
         }
+        Npc sook = Npc(-16, 16, NPC_TYPE::SOOK);
+        bn::core::update();
         bn::sprite_text_generator text_generator(common::variable_8x8_sprite_font);
         dialogue_scene(text_generator, "Anyone to home?");
         bn::core::update();

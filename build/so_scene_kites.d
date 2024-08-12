@@ -116,11 +116,19 @@ so_scene_kites.o: \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_top_left_fixed_rect_fwd.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_camera_actions.h \
  C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_value_template_actions.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_regular_bg_items_pasture.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_item.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_bg_palette_item.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_item.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_tiles_item.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_player.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_type.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc_type.h \
- C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_dialogue_scene.h
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_dialogue_scene.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_item.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_item_type.h
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_kites.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_player.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_fixed_point.h:
@@ -237,8 +245,16 @@ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_top_left_rect.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_top_left_fixed_rect_fwd.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_camera_actions.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_value_template_actions.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_regular_bg_items_pasture.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_item.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_bg_palette_item.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_item.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_map_cell.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_regular_bg_tiles_item.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_player.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_type.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc_type.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_dialogue_scene.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_item.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_item_type.h:
