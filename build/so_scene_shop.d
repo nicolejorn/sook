@@ -128,7 +128,16 @@ so_scene_shop.o: \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_type.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc.h \
  C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc_type.h \
- C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_dialogue_scene.h
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_dialogue_scene.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_item.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_item_type.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sound_items.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_item.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_handle.h \
+ C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sound_items_info.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_actions.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound.h \
+ C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_template_actions.h
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_shop.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_core.h:
 C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_span.h:
@@ -258,3 +267,12 @@ C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_scene_type.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_npc_type.h:
 C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_dialogue_scene.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_item.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/include/so_item_type.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sound_items.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_item.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_handle.h:
+C:/Users/sadie/programming/butano-17.5.0/games/sook/build/bn_sound_items_info.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound_actions.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_sound.h:
+C:/Users/sadie/programming/butano-17.5.0/butano/include/bn_template_actions.h:

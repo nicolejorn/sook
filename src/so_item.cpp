@@ -16,6 +16,7 @@
 #include "bn_sprite_items_hat.h"
 #include "bn_sprite_items_pecan.h"
 #include "bn_sprite_items_buddy_kite.h"
+#include "bn_sprite_items_bead_purse.h"
 
 namespace so {
     Item::Item(int x, int y, ITEM_TYPE type)
@@ -32,6 +33,10 @@ namespace so {
         {
             _sprite = bn::sprite_items::buddy_kite.create_sprite(_pos.x(), _pos.y());
         }
+        else if(_type == ITEM_TYPE::PURSE)
+        {
+            _sprite = bn::sprite_items::bead_purse.create_sprite(_pos.x(), _pos.y());
+        }
         _sprite.value().set_visible(true);
     }
 
@@ -45,6 +50,7 @@ namespace so {
 
     void Item::set_pos(bn::fixed_point pos){
         _pos = pos;
+        _sprite.value().set_position(_pos);
     }
 
     ITEM_TYPE Item::type(){

@@ -7,7 +7,8 @@ namespace so
     {
         HAT,
         PECAN,
-        KITE
+        KITE,
+        PURSE
     };
 }
 

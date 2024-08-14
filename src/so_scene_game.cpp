@@ -88,7 +88,11 @@ namespace so
             while(_player->pos().y() < 50) {
                 _player->move_player(true);
             }
-            queenie.set_pos(bn::fixed_point(_player->pos().x() + 40, _player->pos().y()));
+            while(queenie.pos().y() < 50) {
+                queenie.set_pos(bn::fixed_point(_player->pos().x() + 40, queenie.pos().y() + 2));
+                bn::core::update();
+            }
+            //queenie.set_pos(bn::fixed_point(_player->pos().x() + 40, _player->pos().y()));
             bn::core::update();
             bn::sound_items::crunch.play(0.95);
             /* while(!bn::keypad::start_pressed()) {

@@ -22,6 +22,10 @@
 #include "so_npc.h"
 #include "so_npc_type.h"
 #include "so_dialogue_scene.h"
+#include "so_item.h"
+#include "bn_sound_items.h"
+#include "bn_sound_items_info.h"
+#include "bn_sound_actions.h"
 /* #include "bn_affine_bg_big_map_canvas_size.h"
 #include "bn_affine_bg_pa_register_hbe_ptr.h"
 #include "bn_affine_bg_pd_register_hbe_ptr.h"
@@ -51,6 +55,19 @@ namespace so
         bn::core::update();
         dialogue_scene(text_generator, "What do you want with Haha?");
         bn::core::update();
+        Item purse = Item(10, 0, ITEM_TYPE::PURSE);
+        bn::core::update();
+        while(purse.pos().y() > -15) {
+            purse.set_pos(bn::fixed_point(purse.pos().x(), purse.pos().y() - 1));
+            bn::core::update();
+        }
+        while(purse.pos().y() < 0) {
+            purse.set_pos(bn::fixed_point(purse.pos().x(), purse.pos().y() + 1));
+            bn::core::update();
+        }
+        bn::core::update();
+        bn::sound_items::cap.play(0.95);
+        purse.set_visible(false);
         dialogue_scene(text_generator, "Tell you what.");
         bn::core::update();
         dialogue_scene(text_generator, "Send me one of the fruitcakes instead.");

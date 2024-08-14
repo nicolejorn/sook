@@ -39,6 +39,8 @@ namespace so {
 
     void Player::spawn(bn::fixed_point pos){
         _pos = pos;
+        _sprite.set_x(_pos.x());
+        _sprite.set_y(_pos.y());
         _sprite.set_visible(true);
         //_healthbar.set_visible(false);
         reset();
